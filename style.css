@@ -1373,6 +1373,17 @@ a { color: inherit; text-decoration: none; }
    FILTERS + i18n — перенесено из tours.css
 ═══════════════════════════════════════════ */
 
+/* ─── GOLD PRICE TAG ─── */
+.route-card__price-gold {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  letter-spacing: -.01em;
+  margin: 0;
+  line-height: 1;
+}
+
 /* ─── LANGUAGE SWITCHER ─── */
 .lang-switcher {
   display: flex;

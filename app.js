@@ -191,6 +191,21 @@
       catalogue_microcopy: 'Не нашли то, что искали?',
       catalogue_link:      'Напишите нам',
       catalogue_suffix:    '— согласуем маршрут под вас.',
+
+      faq_eyebrow: 'FAQ',
+      faq_title:   'Частые вопросы',
+      faq1_q: 'Чем это отличается от групповой экскурсии?',
+      faq1_a: 'В группе вы едете по стандартному маршруту с 20–40 незнакомыми людьми и останавливаетесь там, где удобно автобусу. С нами — только вы, ваш маршрут, ваш темп.',
+      faq2_q: 'Сколько стоит маршрут?',
+      faq2_a: 'Зависит от маршрута и количества людей. Напишите нам — скажем точную стоимость и ответим в течение часа.',
+      faq3_q: 'На каком языке работает гид?',
+      faq3_a: 'Русский, English, Srpski.',
+      faq4_q: 'Как долго длится экскурсия?',
+      faq4_a: 'Обычно от 4 до 11 часов — зависит от маршрута. Обсуждаем под ваше расписание.',
+      faq5_q: 'Можно ли создать свой маршрут?',
+      faq5_a: 'Да. Именно это мы и предлагаем. Расскажите, что хотите увидеть — составим день под вас.',
+      faq6_q: 'Нужна ли предоплата?',
+      faq6_a: 'Нет. Оплата по договорённости, обычно в день тура.',
     },
     en: {
       nav_cta:         'Choose a route',
@@ -228,7 +243,22 @@
 
       catalogue_microcopy: 'Can\'t find what you\'re looking for?',
       catalogue_link:      'Contact us',
-      catalogue_suffix:    '— we\'ll plan a route for you.',
+      catalogue_suffix:    '--- we\'ll plan a route for you.',
+
+      faq_eyebrow: 'FAQ',
+      faq_title:   'Frequently Asked Questions',
+      faq1_q: 'How is this different from a group tour?',
+      faq1_a: 'In a group, you follow a standard route with 20–40 strangers and stop where the bus schedule allows. With us — it\'s just you, your route, your pace.',
+      faq2_q: 'How much does a tour cost?',
+      faq2_a: 'It depends on the route and the number of people. Message us — we\'ll give you an exact price and reply within the hour.',
+      faq3_q: 'What language does the guide speak?',
+      faq3_a: 'Russian, English, Serbian.',
+      faq4_q: 'How long is the tour?',
+      faq4_a: 'Usually 4 to 11 hours, depending on the route. We arrange it around your schedule.',
+      faq5_q: 'Can I create a custom route?',
+      faq5_a: 'Yes. That\'s exactly what we offer. Tell us what you want to see — we\'ll build the day around it.',
+      faq6_q: 'Is prepayment required?',
+      faq6_a: 'No. Payment is by agreement, usually on the day of the tour.',
     },
     sr: {
       nav_cta:         'Izaberite rutu',
@@ -266,7 +296,22 @@
 
       catalogue_microcopy: 'Niste pronašli šta tražite?',
       catalogue_link:      'Pišite nam',
-      catalogue_suffix:    '— dogovorićemo rutu za vas.',
+      catalogue_suffix:    '— dogovorit ćemo rutu za vas.',
+
+      faq_eyebrow: 'FAQ',
+      faq_title:   'Česta pitanja',
+      faq1_q: 'Čime se ovo razlikuje od grupne ture?',
+      faq1_a: 'U grupi idete standardnom rutom sa 20–40 stranaca i stanete gde autobus kaže. Sa nama — samo vi, vaša ruta, vaš tempo.',
+      faq2_q: 'Koliko košta tura?',
+      faq2_a: 'Zavisi od rute i broja osoba. Pišite nam — reći ćemo vam tačnu cenu i odgovoriti u roku od sata.',
+      faq3_q: 'Na kom jeziku radi vodič?',
+      faq3_a: 'Russki, English, Srpski.',
+      faq4_q: 'Koliko traje ekskurzija?',
+      faq4_a: 'Obično od 4 do 11 sati — zavisi od rute. Dogovaramo prema vašem rasporedu.',
+      faq5_q: 'Mogu li da kreiram svoju rutu?',
+      faq5_a: 'Da. Upravo to i nudimo. Recite nam šta želite da vidite — napravit ćemo dan po meri.',
+      faq6_q: 'Da li je potrebna avansna uplata?',
+      faq6_a: 'Ne. Plaćanje se dogovara, obično na dan ture.',
     },
   };
 
@@ -385,5 +430,25 @@
   }
 
   applyFilters();
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const answer = btn.nextElementSibling;
+
+      // Close all
+      document.querySelectorAll('.faq__q').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        if (b.nextElementSibling) b.nextElementSibling.hidden = true;
+      });
+
+      // Open clicked (unless it was already open)
+      if (!expanded) {
+        btn.setAttribute('aria-expanded', 'true');
+        if (answer) answer.hidden = false;
+      }
+    });
+  });
 
 })();
