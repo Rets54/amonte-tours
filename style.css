@@ -1368,3 +1368,337 @@ a { color: inherit; text-decoration: none; }
     min-width: unset;
   }
 }
+
+/* ═══════════════════════════════════════════
+   FILTERS + i18n — перенесено из tours.css
+═══════════════════════════════════════════ */
+
+/* ─── LANGUAGE SWITCHER ─── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 100px;
+  padding: 3px;
+  margin-inline: auto 8px;
+}
+
+.nav--scrolled .lang-switcher {
+  background: rgba(19,19,16,.06);
+  border-color: var(--color-border);
+}
+
+.lang-btn {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--color-text-light);
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  line-height: 1;
+}
+
+.nav--scrolled .lang-btn {
+  color: var(--color-text-muted);
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.nav--scrolled .lang-btn:hover {
+  background: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+.lang-btn--active {
+  background: rgba(255,255,255,.9) !important;
+  color: var(--color-bg-dark) !important;
+}
+
+.nav--scrolled .lang-btn--active {
+  background: var(--color-accent) !important;
+  color: #fff !important;
+}
+
+/* ─── FILTER TABS (time) ─── */
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 16px;
+}
+
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: center;
+  line-height: 1.2;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.filter-tab__icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.filter-tab__hint {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  opacity: .7;
+  margin-top: 2px;
+}
+
+.filter-tab:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(46,125,82,.04);
+}
+
+.filter-tab--active {
+  background: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: #fff !important;
+}
+
+.filter-tab--active .filter-tab__hint {
+  color: rgba(255,255,255,.75) !important;
+  opacity: 1;
+}
+
+/* ─── VIBE TAGS ─── */
+.vibe-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.vibe-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.vibe-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.vibe-tag--active {
+  background: rgba(46,125,82,.1);
+  border-color: var(--color-accent) !important;
+  color: var(--color-accent-dark) !important;
+  font-weight: 600;
+}
+
+/* ─── ROUTES EMPTY STATE ─── */
+.routes-empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed var(--color-border);
+  margin: 8px 0 24px;
+}
+
+/* hide/show animation for route cards */
+.route-card[data-hidden] {
+  display: none;
+}
+
+/* ─── ROUTE CARD FOOTER (price + CTA row) ─── */
+.route-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.route-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-family: var(--font-sans);
+}
+
+.route-card__price span:first-child {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.route-card__price strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  font-family: var(--font-serif);
+}
+
+.route-card__price-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ensure card body uses flex column so footer stays at bottom */
+.route-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── CUSTOM ROUTE CARD ─── */
+.route-card--custom {
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, #f0f9f4 100%);
+  border: 2px dashed var(--color-good-border);
+}
+
+.route-card__body--custom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 32px;
+  gap: 16px;
+}
+
+.route-card__custom-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* ─── FAQ ─── */
+.faq__list {
+  max-width: 760px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faq__item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg);
+  transition: box-shadow var(--transition);
+}
+
+.faq__item:has(.faq__q[aria-expanded="true"]) {
+  box-shadow: var(--shadow-md);
+}
+
+.faq__q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+  transition: background var(--transition);
+}
+
+.faq__q:hover {
+  background: var(--color-bg-light);
+}
+
+.faq__q::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.faq__q[aria-expanded="true"]::after {
+  content: '−';
+  transform: none;
+}
+
+.faq__a {
+  padding: 0 24px 18px;
+}
+
+.faq__a p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ─── RESPONSIVE mobile ─── */
+@media (max-width: 700px) {
+  .filter-tabs {
+    gap: 8px;
+  }
+
+  .filter-tab {
+    min-width: 80px;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .route-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .route-card__footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lang-switcher {
+    margin-inline: auto 0;
+  }
+}

@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════
    AMONTE — app.js
    Nav scroll · Fade-in animations · Gallery · Contact Form
+   Lang switcher (RU/EN/SR) · Route Filters (time + vibe)
 ═══════════════════════════════════════════ */
 
 (function () {
@@ -148,5 +149,241 @@
       window.open(tgUrl, '_blank', 'noopener,noreferrer');
     });
   }
+
+  /* ══════════════════════════════════════════════
+     LANG SWITCHER + i18n (RU / EN / SR)
+  ══════════════════════════════════════════════ */
+  const i18n = {
+    ru: {
+      nav_cta:         'Выбрать маршрут',
+      hero_badge:      'Из Будвы · На машине · Только вы',
+      hero_h1_line1:   'Черногория без\u00a0автобуса',
+      hero_h1_em:      'автобуса',
+      hero_sub:        'Однодневные маршруты на машине с личным гидом.\nВыбираете, куда ехать — мы знаем, что показать.',
+      hero_cta:        'Выбрать маршрут ↓',
+      hero_support:    'Горы, каньоны, старые города у моря и места, о которых не пишут в путеводителях — за один день.',
+
+      cat_eyebrow:     'Маршруты',
+      cat_title:       'Выберите маршрут',
+      cat_sub:         'Готовые однодневные маршруты из Будвы. Каждый можно адаптировать под вас.',
+
+      tab_all:         'Все маршруты',
+      tab_short:       'До 4 ч',
+      tab_short_hint:  'Короткий день',
+      tab_half:        'Полдня',
+      tab_half_hint:   '~5–7 часов',
+      tab_full:        'Весь день',
+      tab_full_hint:   'Горы и каньоны',
+
+      vibe_sea:        'Море и залив',
+      vibe_boat:       'Лодка',
+      vibe_mountain:   'Горы',
+      vibe_monastery:  'Монастыри',
+      vibe_nature:     'Природа',
+      vibe_city:       'Старые города',
+
+      routes_empty:    'По этим фильтрам маршрутов нет — попробуйте другой набор.',
+
+      from:            'от',
+      price_per_group: 'за группу',
+      r_cta:           'Забронировать этот маршрут',
+
+      catalogue_microcopy: 'Не нашли то, что искали?',
+      catalogue_link:      'Напишите нам',
+      catalogue_suffix:    '— согласуем маршрут под вас.',
+    },
+    en: {
+      nav_cta:         'Choose a route',
+      hero_badge:      'From Budva · By car · Just you',
+      hero_h1_line1:   'Montenegro without a bus',
+      hero_h1_em:      'bus',
+      hero_sub:        'Day tours by car with a private guide.\nYou choose where to go — we know what to show.',
+      hero_cta:        'Choose a route ↓',
+      hero_support:    'Mountains, canyons, old towns by the sea and places not in guidebooks — all in one day.',
+
+      cat_eyebrow:     'Routes',
+      cat_title:       'Choose your route',
+      cat_sub:         'Ready-made day routes from Budva. Each can be adapted for you.',
+
+      tab_all:         'All routes',
+      tab_short:       'Under 4h',
+      tab_short_hint:  'Short day',
+      tab_half:        'Half day',
+      tab_half_hint:   '~5–7 hours',
+      tab_full:        'Full day',
+      tab_full_hint:   'Mountains & canyons',
+
+      vibe_sea:        'Sea & Bay',
+      vibe_boat:       'Boat',
+      vibe_mountain:   'Mountains',
+      vibe_monastery:  'Monasteries',
+      vibe_nature:     'Nature',
+      vibe_city:       'Old Towns',
+
+      routes_empty:    'No routes match these filters — try a different combination.',
+
+      from:            'from',
+      price_per_group: 'per group',
+      r_cta:           'Book this route',
+
+      catalogue_microcopy: 'Can\'t find what you\'re looking for?',
+      catalogue_link:      'Contact us',
+      catalogue_suffix:    '— we\'ll plan a route for you.',
+    },
+    sr: {
+      nav_cta:         'Izaberite rutu',
+      hero_badge:      'Iz Budve · Autom · Samo vi',
+      hero_h1_line1:   'Crna Gora bez autobusa',
+      hero_h1_em:      'autobusa',
+      hero_sub:        'Jednodnevne rute autom sa privatnim vodičem.\nVirate kuda idete — mi znamo šta da pokažemo.',
+      hero_cta:        'Izaberite rutu ↓',
+      hero_support:    'Planine, kanjoni, stari gradovi uz more i mesta kojih nema u vodičima — sve za jedan dan.',
+
+      cat_eyebrow:     'Rute',
+      cat_title:       'Izaberite rutu',
+      cat_sub:         'Gotove jednodnevne rute iz Budve. Svaku možemo prilagoditi za vas.',
+
+      tab_all:         'Sve rute',
+      tab_short:       'Do 4 sata',
+      tab_short_hint:  'Kratki dan',
+      tab_half:        'Pola dana',
+      tab_half_hint:   '~5–7 sati',
+      tab_full:        'Ceo dan',
+      tab_full_hint:   'Planine i kanjoni',
+
+      vibe_sea:        'More i zaliv',
+      vibe_boat:       'Čamac',
+      vibe_mountain:   'Planine',
+      vibe_monastery:  'Manastiri',
+      vibe_nature:     'Priroda',
+      vibe_city:       'Stari gradovi',
+
+      routes_empty:    'Nema ruta za ove filtere — probajte drugu kombinaciju.',
+
+      from:            'od',
+      price_per_group: 'za grupu',
+      r_cta:           'Rezervišite ovu rutu',
+
+      catalogue_microcopy: 'Niste pronašli šta tražite?',
+      catalogue_link:      'Pišite nam',
+      catalogue_suffix:    '— dogovorićemo rutu za vas.',
+    },
+  };
+
+  let currentLang = 'ru';
+
+  function applyLang(lang) {
+    currentLang = lang;
+    const s = i18n[lang];
+    if (!s) return;
+
+    document.documentElement.lang = lang;
+
+    // All [data-i18n] elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (s[key] !== undefined) {
+        if (s[key].includes('\n')) {
+          el.innerHTML = s[key].replace(/\n/g, '<br>');
+        } else {
+          el.textContent = s[key];
+        }
+      }
+    });
+
+    // Active state on lang buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
+    });
+
+    // Persist
+    try { localStorage.setItem('amonte_lang', lang); } catch(e) {}
+  }
+
+  function detectLang() {
+    try {
+      const saved = localStorage.getItem('amonte_lang');
+      if (saved && i18n[saved]) return saved;
+    } catch(e) {}
+    const nav = (navigator.language || 'ru').toLowerCase().slice(0, 2);
+    if (nav === 'en') return 'en';
+    if (nav === 'sr' || nav === 'hr' || nav === 'bs') return 'sr';
+    return 'ru';
+  }
+
+  const langSwitcher = document.getElementById('lang-switcher');
+  if (langSwitcher) {
+    langSwitcher.addEventListener('click', e => {
+      const btn = e.target.closest('.lang-btn');
+      if (btn && btn.dataset.lang) applyLang(btn.dataset.lang);
+    });
+  }
+
+  applyLang(detectLang());
+
+  /* ══════════════════════════════════════════════
+     ROUTE FILTERS: time-tabs + vibe-tags
+  ══════════════════════════════════════════════ */
+  let activeTime  = 'all';
+  let activeVibes = new Set();
+
+  function applyFilters() {
+    const cards = document.querySelectorAll('#catalogue-grid .route-card');
+    const empty = document.getElementById('routes-empty');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const cardTime  = card.dataset.time  || 'all';
+      const cardVibes = (card.dataset.vibes || 'all').split(' ');
+
+      const timeOk = activeTime === 'all' || cardTime === 'all' || cardTime === activeTime;
+      const vibeOk = activeVibes.size === 0
+        || cardVibes.includes('all')
+        || [...activeVibes].some(v => cardVibes.includes(v));
+
+      if (timeOk && vibeOk) {
+        card.removeAttribute('data-hidden');
+        visible++;
+      } else {
+        card.setAttribute('data-hidden', '');
+      }
+    });
+
+    if (empty) empty.hidden = visible > 0;
+  }
+
+  const timeTabs = document.getElementById('time-tabs');
+  if (timeTabs) {
+    timeTabs.addEventListener('click', e => {
+      const tab = e.target.closest('.filter-tab');
+      if (!tab) return;
+      activeTime = tab.dataset.time || 'all';
+      timeTabs.querySelectorAll('.filter-tab').forEach(t => {
+        const isActive = t === tab;
+        t.classList.toggle('filter-tab--active', isActive);
+        t.setAttribute('aria-selected', String(isActive));
+      });
+      applyFilters();
+    });
+  }
+
+  const vibeTags = document.getElementById('vibe-tags');
+  if (vibeTags) {
+    vibeTags.addEventListener('click', e => {
+      const tag = e.target.closest('.vibe-tag');
+      if (!tag) return;
+      const vibe = tag.dataset.vibe;
+      if (activeVibes.has(vibe)) {
+        activeVibes.delete(vibe);
+        tag.classList.remove('vibe-tag--active');
+      } else {
+        activeVibes.add(vibe);
+        tag.classList.add('vibe-tag--active');
+      }
+      applyFilters();
+    });
+  }
+
+  applyFilters();
 
 })();

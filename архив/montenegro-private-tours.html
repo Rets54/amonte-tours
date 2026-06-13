@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RU default SEO -->
+  <title id="page-title">Экскурсии по Черногории с личным гидом — Amonte</title>
+  <meta name="description" id="page-desc" content="Индивидуальные туры по Черногории: Котор, Будва, Дурмитор, Перасть. Ваш маршрут, ваш темп. Персональный гид на русском языке. Напишите — обсудим.">
+  <link rel="canonical" href="https://amonte.me/montenegro-private-tours">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Экскурсии по Черногории с личным гидом — Amonte">
+  <meta property="og:description" content="Индивидуальные туры по Черногории. Котор, Будва, Дурмитор, Перасть — ваш маршрут, ваш темп.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amonte.me/montenegro-private-tours">
+  <meta property="og:image" content="https://amonte.me/img/hero_montenegro.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tours.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Amonte — главная">
+        <span class="nav__logo-mark">A</span>
+        <span class="nav__logo-text">monte</span>
+      </a>
+
+      <!-- Language switcher -->
+      <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn lang-btn--active" data-lang="ru" type="button">RU</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="sr" type="button">SR</button>
+      </div>
+
+      <a href="#contact" class="nav__cta btn btn--primary btn--sm" id="nav-cta">
+        <span data-i18n="nav_cta">Написать гиду</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Главный экран">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="img/hero_montenegro.png" alt="Панорама Черногории" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge" data-i18n="hero_badge">Только вы · Ваш маршрут · Живой гид</div>
+      <h1 class="hero__headline">
+        <span data-i18n="hero_h1_line1">Экскурсии по Черногории</span><br>
+        <em class="hero__gold" data-i18n="hero_h1_line2">с личным гидом</em>
+      </h1>
+      <p class="hero__subheadline" data-i18n="hero_sub">
+        Ваш маршрут, ваш темп — без автобуса и без толпы.<br>
+        Котор, Будва, Дурмитор, Перасть и не только.
+      </p>
+      <a href="#contact" class="btn btn--hero" id="hero-cta">
+        <span data-i18n="hero_cta">Написать в WhatsApp</span>
+      </a>
+      <p class="hero__support" data-i18n="hero_support">
+        Отвечу в течение часа · Без предоплаты · Маршрут обсуждаем под вас
+      </p>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTRAST — Why Not a Group Tour
+  ═══════════════════════════════════════ -->
+  <section class="contrast section" id="contrast" aria-label="Сравнение форматов">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contrast_title">Не автобус. Не толпа. Не «как у всех».</h2>
+      <p class="section__subtitle" data-i18n="contrast_sub">Групповые туры удобны — но не для всех. Вот в чём разница.</p>
+
+      <div class="contrast__table-wrap">
+        <table class="contrast__table" role="table">
+          <thead>
+            <tr>
+              <th data-i18n="ct_param">Параметр</th>
+              <th class="contrast__bad" data-i18n="ct_group">🚌 Автобусная экскурсия</th>
+              <th class="contrast__good" data-i18n="ct_amonte">✅ Amonte</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="ct_route">Маршрут</td>
+              <td class="contrast__bad" data-i18n="ct_route_bad">Стандартный для всех</td>
+              <td class="contrast__good" data-i18n="ct_route_good">Обсуждаем под вас</td>
+            </tr>
+            <tr>
+              <td data-i18n="ct_pace">Темп</td>
+              <td class="contrast__bad" data-i18n="ct_pace_bad">Фиксированный</td>
+              <td class="contrast__good" data-i18n="ct_pace_good">Ваш</td>
+            </tr>
+            <tr>
+              <td data-i18n="ct_group_size">Группа</td>
+              <td class="contrast__bad" data-i18n="ct_group_bad">20–40 человек</td>
+              <td class="contrast__good" data-i18n="ct_group_good">Только вы</td>
+            </tr>
+            <tr>
+              <td data-i18n="ct_stops">Остановки</td>
+              <td class="contrast__bad" data-i18n="ct_stops_bad">По расписанию</td>
+              <td class="contrast__good" data-i18n="ct_stops_good">Там, где интересно</td>
+            </tr>
+            <tr>
+              <td data-i18n="ct_lang">Язык гида</td>
+              <td class="contrast__bad" data-i18n="ct_lang_bad">Общий для группы</td>
+              <td class="contrast__good" data-i18n="ct_lang_good">Нативный для вас</td>
+            </tr>
+            <tr>
+              <td data-i18n="ct_price">Цена</td>
+              <td class="contrast__bad" data-i18n="ct_price_bad">25–40 € с человека</td>
+              <td class="contrast__good" data-i18n="ct_price_good">от 25 € с человека при 4 чел.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRICE MATH BLOCK -->
+      <div class="price-math" aria-label="Сравнение цен">
+        <p class="price-math__eyebrow" data-i18n="pm_eyebrow">Считаем честно</p>
+        <h3 class="price-math__title" data-i18n="pm_title">Сколько стоит частный тур на самом деле?</h3>
+        <div class="price-math__grid">
+          <div class="price-math__card price-math__card--group">
+            <div class="price-math__icon" aria-hidden="true">🚌</div>
+            <div class="price-math__label" data-i18n="pm_group_label">Групповая экскурсия</div>
+            <div class="price-math__formula" data-i18n="pm_group_formula">30 € × 4 человека</div>
+            <div class="price-math__total price-math__total--group">= 120 €</div>
+            <div class="price-math__note" data-i18n="pm_group_note">Стандартный маршрут · Автобус · Без выбора</div>
+          </div>
+          <div class="price-math__vs" aria-hidden="true">VS</div>
+          <div class="price-math__card price-math__card--private">
+            <div class="price-math__icon" aria-hidden="true">🚗</div>
+            <div class="price-math__label" data-i18n="pm_private_label">Amonte — частный тур</div>
+            <div class="price-math__formula" data-i18n="pm_private_formula">от 100 € на всех</div>
+            <div class="price-math__total price-math__total--private" data-i18n="pm_private_total">= 25 € с человека</div>
+            <div class="price-math__note" data-i18n="pm_private_note">Ваш маршрут · Ваш темп · Только вы</div>
+          </div>
+        </div>
+        <p class="price-math__conclusion" data-i18n="pm_conclusion">При поездке семьёй или парой — частный тур выходит <strong data-i18n="pm_conclusion_em">дешевле или вровень с групповым</strong>. Но без толпы и автобуса.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ROUTES SHOWCASE
+  ═══════════════════════════════════════ -->
+  <section class="catalogue section section--light" id="routes" aria-label="Маршруты">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="routes_eyebrow">Маршруты</p>
+      <h2 class="section__title" data-i18n="routes_title">Что вы увидите</h2>
+      <p class="section__subtitle" data-i18n="routes_sub">Выберите по времени — или просто листайте</p>
+
+      <!-- TIME TABS -->
+      <div class="filter-tabs" role="tablist" aria-label="Фильтр по времени" id="time-tabs">
+        <button class="filter-tab filter-tab--active" role="tab" aria-selected="true" data-time="all" id="tab-all" type="button">
+          <span class="filter-tab__icon" aria-hidden="true">🗺</span>
+          <span data-i18n="tab_all">Все маршруты</span>
+        </button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-time="short" id="tab-short" type="button">
+          <span class="filter-tab__icon" aria-hidden="true">⚡</span>
+          <span data-i18n="tab_short">До 2 часов</span>
+          <span class="filter-tab__hint" data-i18n="tab_short_hint">Вылазка из Будвы</span>
+        </button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-time="half" id="tab-half" type="button">
+          <span class="filter-tab__icon" aria-hidden="true">🌅</span>
+          <span data-i18n="tab_half">Полдня</span>
+          <span class="filter-tab__hint" data-i18n="tab_half_hint">~4–6 часов</span>
+        </button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-time="full" id="tab-full" type="button">
+          <span class="filter-tab__icon" aria-hidden="true">🏔</span>
+          <span data-i18n="tab_full">Весь день</span>
+          <span class="filter-tab__hint" data-i18n="tab_full_hint">Север, горы, каньоны</span>
+        </button>
+      </div>
+
+      <!-- VIBE TAGS -->
+      <div class="vibe-tags" role="group" aria-label="Фильтр по характеру" id="vibe-tags">
+        <button class="vibe-tag" data-vibe="sea" type="button"><span aria-hidden="true">🌊</span> <span data-i18n="vibe_sea">Море и залив</span></button>
+        <button class="vibe-tag" data-vibe="boat" type="button"><span aria-hidden="true">⛵</span> <span data-i18n="vibe_boat">Лодка</span></button>
+        <button class="vibe-tag" data-vibe="mountain" type="button"><span aria-hidden="true">⛰</span> <span data-i18n="vibe_mountain">Горы</span></button>
+        <button class="vibe-tag" data-vibe="monastery" type="button"><span aria-hidden="true">⛪</span> <span data-i18n="vibe_monastery">Монастыри</span></button>
+        <button class="vibe-tag" data-vibe="nature" type="button"><span aria-hidden="true">🌿</span> <span data-i18n="vibe_nature">Природа</span></button>
+        <button class="vibe-tag" data-vibe="city" type="button"><span aria-hidden="true">🏛</span> <span data-i18n="vibe_city">Старые города</span></button>
+      </div>
+
+      <!-- NO RESULTS message (hidden by default) -->
+      <p class="routes-empty" id="routes-empty" hidden data-i18n="routes_empty">По этим фильтрам маршрутов нет — попробуйте другой набор или напишите мне.</p>
+
+      <!-- ROUTES GRID -->
+      <div class="catalogue__grid" id="routes-grid">
+
+        <!-- 1. Котор + залив · half · sea city -->
+        <article class="route-card" id="route-kotor" data-time="half" data-vibes="sea city">
+          <div class="route-card__img-wrap">
+            <img src="img/route_kotor.png" alt="Боко-Которский залив" class="route-card__img" loading="lazy">
+            <div class="route-card__badge" data-i18n="r1_badge">⭐ Самый популярный</div>
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r1_title">Котор и Боко-Которский залив</h3>
+            <p class="route-card__tagline" data-i18n="r1_tagline">Средневековый город, крепостные стены, рыбацкие деревни у воды</p>
+            <div class="route-card__meta">
+              <span data-i18n="r1_meta1">📍 Котор · Перасть · Остров Госпа</span>
+              <span data-i18n="r1_meta2">⏱ 5–6 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r1_desc">Один из самых красивых заливов Европы — без толпы на причале. Старый город внутри стен, подъём на крепость, маленький остров посреди залива.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>100 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Котор" class="btn btn--primary btn--route" id="cta-mpt-kotor" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Свети-Стефан + видовая · short · sea -->
+        <article class="route-card" id="route-sveti" data-time="short" data-vibes="sea">
+          <div class="route-card__img-wrap">
+            <img src="img/route_stari_bar.png" alt="Свети-Стефан и видовая над морем" class="route-card__img" loading="lazy">
+            <div class="route-card__badge" data-i18n="r7_badge">⚡ Быстрая вылазка</div>
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r7_title">Свети-Стефан и видовая</h3>
+            <p class="route-card__tagline" data-i18n="r7_tagline">Лучший вид на Адриатику — за 1.5–2 часа из Будвы</p>
+            <div class="route-card__meta">
+              <span data-i18n="r7_meta1">📍 Свети-Стефан · Видовая точка</span>
+              <span data-i18n="r7_meta2">⏱ 1.5–2 часа</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r7_desc">Если у вас пара часов — едем к самому фотогеничному виду побережья. Остров-отель Свети-Стефан, обрывы над морем, никакой толпы.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>50 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Свети-Стефан" class="btn btn--primary btn--route" id="cta-mpt-sveti" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Будва Старый город · short · sea city -->
+        <article class="route-card" id="route-mpt-budva" data-time="short" data-vibes="sea city">
+          <div class="route-card__img-wrap">
+            <img src="img/route_kotor.png" alt="Будва — Старый город" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r2_title">Будва и Старый город</h3>
+            <p class="route-card__tagline" data-i18n="r2_tagline">Историческое ядро курортного побережья</p>
+            <div class="route-card__meta">
+              <span data-i18n="r2_meta1">📍 Старый город · Крепость · Адриатика</span>
+              <span data-i18n="r2_meta2">⏱ 2–3 часа</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r2_desc">Крепость, узкие улочки, Адриатика в двух шагах. Лучший маршрут, если вы уже в Будве и хотите понять её по-настоящему.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>50 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Будва" class="btn btn--primary btn--route" id="cta-mpt-budva" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Перасть + острова · half · sea boat city -->
+        <article class="route-card" id="route-mpt-perast" data-time="half" data-vibes="sea boat city">
+          <div class="route-card__img-wrap">
+            <img src="img/route_kotor.png" alt="Перасть и острова» class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r3_title">Перасть и острова</h3>
+            <p class="route-card__tagline" data-i18n="r3_tagline">Маленький город на заливе — время здесь остановилось</p>
+            <div class="route-card__meta">
+              <span data-i18n="r3_meta1">📍 Перасть · Остров Госпа · Котор</span>
+              <span data-i18n="r3_meta2">⏱ 5–6 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r3_desc">Два острова прямо в воде, барочная архитектура, лодки у причала. Одно из самых фотогеничных мест всего Средиземноморья.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>100 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Перасть" class="btn btn--primary btn--route" id="cta-mpt-perast" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Скадарское озеро · half · boat nature -->
+        <article class="route-card" id="route-mpt-skadar" data-time="half" data-vibes="boat nature">
+          <div class="route-card__img-wrap">
+            <img src="img/route_skadar.png" alt="Скадарское озеро" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r8_title">Скадарское озеро</h3>
+            <p class="route-card__tagline" data-i18n="r8_tagline">Лодка, птицы, кувшинки — самое большое озеро Балкан</p>
+            <div class="route-card__meta">
+              <span data-i18n="r8_meta1">📍 Скадарское озеро · Нацпарк · Вирпазар</span>
+              <span data-i18n="r8_meta2">⏱ 5–6 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r8_desc">Прогулка на лодке по озеру, рыбацкие деревушки на воде, стаи пеликанов. Место, которое совсем не ожидаешь увидеть в стране у Адриатики.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>100 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20Скадарское%20озеро" class="btn btn--primary btn--route" id="cta-mpt-skadar" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Острог монастырь · half · monastery mountain -->
+        <article class="route-card" id="route-mpt-ostrog" data-time="half" data-vibes="monastery mountain">
+          <div class="route-card__img-wrap">
+            <img src="img/route_lovcen.png" alt="Острог — монастырь в скале" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r9_title">Монастырь Острог</h3>
+            <p class="route-card__tagline" data-i18n="r9_tagline">Православная святыня в скале на высоте 900 метров</p>
+            <div class="route-card__meta">
+              <span data-i18n="r9_meta1">📍 Острог · Даниловград</span>
+              <span data-i18n="r9_meta2">⏱ 5–6 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r9_desc">Монастырь буквально вросший в скалу на 900 метров над уровнем моря. Место паломничества трёх религий. Дорога туда — отдельный аттракцион.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>120 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Острог" class="btn btn--primary btn--route" id="cta-mpt-ostrog" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Цетинье + Ловчен · half · monastery mountain city -->
+        <article class="route-card" id="route-mpt-cetinje" data-time="half" data-vibes="monastery mountain city">
+          <div class="route-card__img-wrap">
+            <img src="img/route_lovcen.png" alt="Цетинье и Ловчен" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r5_title">Цетинье — историческая столица</h3>
+            <p class="route-card__tagline" data-i18n="r5_tagline">Королевский монастырь, музеи, серпантин Ловчена</p>
+            <div class="route-card__meta">
+              <span data-i18n="r5_meta1">📍 Цетинье · Нацпарк Ловчен · Мавзолей Негоша</span>
+              <span data-i18n="r5_meta2">⏱ 5–6 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r5_desc">Место, куда редко добираются без гида. Серпантин в облаках, старая королевская столица и история без туристической шелухи.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>120 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Цетинье" class="btn btn--primary btn--route" id="cta-mpt-cetinje" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Дурмитор · full · mountain nature -->
+        <article class="route-card" id="route-mpt-durmitor" data-time="full" data-vibes="mountain nature">
+          <div class="route-card__img-wrap">
+            <img src="img/route_durmitor.png" alt="Дурмитор — горы и каньон Тары" class="route-card__img" loading="lazy">
+            <div class="route-card__badge" data-i18n="r4_badge">⛰ Самый впечатляющий</div>
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title" data-i18n="r4_title">Дурмитор</h3>
+            <p class="route-card__tagline" data-i18n="r4_tagline">Горный массив, Чёрное озеро, каньон реки Тары</p>
+            <div class="route-card__meta">
+              <span data-i18n="r4_meta1">📍 Жабляк · Каньон Тары · Нацпарк Дурмитор</span>
+              <span data-i18n="r4_meta2">⏱ 10–11 часов</span>
+            </div>
+            <p class="route-card__desc" data-i18n="r4_desc">Для тех, кто хочет видеть Черногорию не только с пляжа. Самый глубокий каньон Европы и дикие горы в один день.</p>
+            <div class="route-card__footer">
+              <div class="route-card__price" aria-label="Стоимость"><span data-i18n="from">от</span> <strong>300 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
+              <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20маршрут%20Дурмитор" class="btn btn--primary btn--route" id="cta-mpt-durmitor" target="_blank" rel="noopener" data-i18n="r_cta">Обсудить маршрут</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Ваш маршрут · custom -->
+        <article class="route-card route-card--custom" id="route-mpt-custom" data-time="all" data-vibes="all">
+          <div class="route-card__body route-card__body--custom">
+            <div class="route-card__custom-icon" aria-hidden="true">🗺</div>
+            <h3 class="route-card__title" data-i18n="r6_title">Ваш маршрут</h3>
+            <p class="route-card__desc" data-i18n="r6_desc">Расскажите, что вам интересно — составим день под вас. Комбинации маршрутов, нестандартные места, особые пожелания — всё обсуждаемо.</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20согласовать%20свой%20маршрут%20по%20Черногории" class="btn btn--outline" id="cta-mpt-custom" target="_blank" rel="noopener" data-i18n="r6_cta">Написать и обсудить</a>
+          </div>
+        </article>
+
+      </div><!-- /routes-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT GUIDE
+  ═══════════════════════════════════════ -->
+  <section class="offer section" id="guide" aria-label="О гиде">
+    <div class="container">
+      <div class="guide__inner">
+        <div class="guide__photo-col">
+          <div class="guide__photo-wrap">
+            <img src="img/route_skadar.png" alt="Гид Amonte — Черногория" class="guide__photo">
+            <div class="guide__langs">
+              <span>🇷🇺 Русский</span>
+              <span>🇬🇧 English</span>
+              <span>🇷🇸 Srpski</span>
+            </div>
+          </div>
+        </div>
+        <div class="guide__text-col">
+          <p class="section__eyebrow" data-i18n="guide_eyebrow">Ваш гид</p>
+          <h2 class="section__title section__title--left" data-i18n="guide_title">Марко</h2>
+          <p class="offer__lead" data-i18n="guide_lead">Живу в Черногории. Вожу туристов по этой стране уже много лет.</p>
+          <p class="offer__body" data-i18n="guide_body">Я не работаю с группами в автобусе. Я работаю с людьми напрямую: обсуждаем, что вам важно, куда хотите попасть, сколько времени у вас есть — и строим день именно под это. Я знаю Котор не из путеводителя. Знаю, где в Перасти лучший вид на залив — не переполненный туристами. Знаю, какая дорога на Дурмитор открывает вид, ради которого стоит ехать.</p>
+
+          <ul class="offer__features" aria-label="Преимущества гида">
+            <li class="offer__feature">
+              <span class="offer__feature-icon" aria-hidden="true">🚗</span>
+              <div>
+                <strong data-i18n="guide_f1_title">Личный автомобиль</strong>
+                <span data-i18n="guide_f1_sub">Комфортный трансфер, без пересадок</span>
+              </div>
+            </li>
+            <li class="offer__feature">
+              <span class="offer__feature-icon" aria-hidden="true">🗺</span>
+              <div>
+                <strong data-i18n="guide_f2_title">Маршрут всегда согласован</strong>
+                <span data-i18n="guide_f2_sub">Обсуждаем заранее, без сюрпризов</span>
+              </div>
+            </li>
+            <li class="offer__feature">
+              <span class="offer__feature-icon" aria-hidden="true">⏱</span>
+              <div>
+                <strong data-i18n="guide_f3_title">Ответ в течение часа</strong>
+                <span data-i18n="guide_f3_sub">WhatsApp или Telegram, без ожидания</span>
+              </div>
+            </li>
+            <li class="offer__feature">
+              <span class="offer__feature-icon" aria-hidden="true">🗣</span>
+              <div>
+                <strong data-i18n="guide_f4_title">RU / EN / SR</strong>
+                <span data-i18n="guide_f4_sub">Работаю на вашем языке</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section class="how section section--light" id="how-it-works" aria-label="Как это работает">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="how_eyebrow">Процесс</p>
+      <h2 class="section__title" data-i18n="how_title">Как это работает</h2>
+      <p class="section__subtitle" data-i18n="how_sub">Три шага — от первого сообщения до начала поездки</p>
+
+      <ol class="how__steps" role="list">
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">01</div>
+          <div class="how__step-content">
+            <h3 data-i18n="how_s1_title">Напишите мне</h3>
+            <p data-i18n="how_s1_body">В WhatsApp или Telegram. Расскажите, что хотите увидеть, сколько у вас времени, откуда едете.</p>
+          </div>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">02</div>
+          <div class="how__step-content">
+            <h3 data-i18n="how_s2_title">Обсудим маршрут</h3>
+            <p data-i18n="how_s2_body">Я предложу несколько вариантов под ваши интересы. Скорректируем детали — и всё готово.</p>
+          </div>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">03</div>
+          <div class="how__step-content">
+            <h3 data-i18n="how_s3_title">Встречаемся и едем</h3>
+            <p data-i18n="how_s3_body">В назначенное время я приезжаю к вашему отелю. Дальше — только дорога и новые места.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       INCLUDED / EXCLUDED
+  ═══════════════════════════════════════ -->
+  <section class="included section" id="included" aria-label="Что входит">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="inc_eyebrow">Честность</p>
+      <h2 class="section__title" data-i18n="inc_title">Что входит — и что нет</h2>
+      <p class="section__subtitle" data-i18n="inc_sub">Без скрытых платежей. Вы знаете заранее, за что платите.</p>
+
+      <div class="included__grid">
+        <div class="included__col included__col--yes">
+          <div class="included__col-header">
+            <span class="included__col-icon" aria-hidden="true">✅</span>
+            <h3 data-i18n="inc_yes_title">Включено</h3>
+          </div>
+          <ul class="included__list" aria-label="Что включено">
+            <li data-i18n="inc_y1">Трансфер на личном автомобиле</li>
+            <li data-i18n="inc_y2">Сопровождение гида весь день</li>
+            <li data-i18n="inc_y3">Маршрут под ваши интересы</li>
+            <li data-i18n="inc_y4">Рекомендации по еде и местам</li>
+            <li data-i18n="inc_y5">Гибкий темп — без спешки</li>
+          </ul>
+        </div>
+        <div class="included__col included__col--no">
+          <div class="included__col-header">
+            <span class="included__col-icon" aria-hidden="true">❌</span>
+            <h3 data-i18n="inc_no_title">Не входит</h3>
+          </div>
+          <ul class="included__list" aria-label="Что не включено">
+            <li data-i18n="inc_n1">Еда и напитки</li>
+            <li data-i18n="inc_n2">Входные билеты в музеи <em data-i18n="inc_n2_em">(обычно 3–5 €)</em></li>
+            <li data-i18n="inc_n3">Бронирование отелей</li>
+            <li data-i18n="inc_n4">Авиабилеты</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="included__microcopy" data-i18n="inc_note">Стоимость входных билетов минимальна. Предупреждаю заранее — никаких сюрпризов на кассе.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       REVIEWS
+  ═══════════════════════════════════════ -->
+  <section class="trust section section--light" id="reviews" aria-label="Отзывы">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="rev_eyebrow">Впечатления</p>
+      <h2 class="section__title" data-i18n="rev_title">Что говорят туристы</h2>
+
+      <div class="trust__quotes reviews__grid" aria-label="Отзывы гостей">
+        <blockquote class="trust__quote">
+          <p data-i18n="rev1_text">«Были в Черногории первый раз. Марко показал нам Котор так, что мы потом ещё два дня возвращались туда пешком. Знает каждый угол.»</p>
+          <footer data-i18n="rev1_author">— Анна и Дмитрий, Москва</footer>
+        </blockquote>
+        <blockquote class="trust__quote">
+          <p data-i18n="rev2_text">«Забронировали за день, уже были на месте. Марко приехал точно вовремя. Взяли маршрут Перасть + Котор. Лучший день в поездке.»</p>
+          <footer data-i18n="rev2_author">— Ирина, Санкт-Петербург</footer>
+        </blockquote>
+        <blockquote class="trust__quote">
+          <p data-i18n="rev3_text">«Дети 7 и 10 лет — думала, будет тяжело. Темп был наш, останавливались сколько хотели. Дети сами попросили поехать ещё раз.»</p>
+          <footer data-i18n="rev3_author">— Наталья, Казань</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════ -->
+  <section class="faq section" id="faq" aria-label="Частые вопросы">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="faq_eyebrow">FAQ</p>
+      <h2 class="section__title" data-i18n="faq_title">Частые вопросы</h2>
+
+      <div class="faq__list" role="list">
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq1_q">
+            Чем это отличается от групповой экскурсии?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq1_a">В группе вы едете по стандартному маршруту с 20–40 незнакомыми людьми и останавливаетесь там, где удобно автобусу. Со мной — только вы, ваш маршрут, ваш темп.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq2_q">
+            Сколько стоит индивидуальный тур?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq2_a">Зависит от маршрута и продолжительности. Напишите мне — обсудим детали и скажу точную стоимость.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq3_q">
+            На каком языке вы работаете?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq3_a">Русский, English, Srpski.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq4_q">
+            Как долго длится экскурсия?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq4_a">Обычно от 4 до 8 часов — договариваемся под ваше расписание.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq5_q">
+            Можно ли создать свой маршрут?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq5_a">Да. Именно это я и предлагаю. Расскажите, что хотите увидеть — я помогу составить день.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false" type="button" data-i18n="faq6_q">
+            Нужна ли предоплата?
+          </button>
+          <div class="faq__a" hidden>
+            <p data-i18n="faq6_a">Нет. Оплата по договорённости, обычно в день тура.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════ -->
+  <section class="final-cta section" id="contact" aria-label="Связаться с гидом">
+    <div class="container">
+      <div class="final-cta__inner">
+        <h2 class="final-cta__headline" data-i18n="fcta_title">Готовы увидеть настоящую Черногорию?</h2>
+        <p class="final-cta__body" data-i18n="fcta_sub">Напишите — и мы обсудим ваш маршрут. Это ни к чему не обязывает.</p>
+
+        <div class="final-cta__btns">
+          <a href="https://wa.me/38268458188?text=Хочу%20узнать%20про%20индивидуальный%20тур%20по%20Черногории"
+             class="btn btn--wa btn--lg" id="final-cta-wa" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+            <span data-i18n="fcta_wa">Написать в WhatsApp</span>
+          </a>
+
+          <a href="https://t.me/amonter?text=Хочу%20узнать%20про%20индивидуальный%20тур%20по%20Черногории"
+             class="btn btn--tg btn--lg" id="final-cta-tg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z" fill="currentColor"/></svg>
+            <span data-i18n="fcta_tg">Написать в Telegram</span>
+          </a>
+        </div>
+
+        <p class="final-cta__note" data-i18n="fcta_note">Отвечу в течение часа · Без предоплаты · На русском / English / Srpski</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__logo">
+          <a href="/" aria-label="Amonte — главная">
+            <span class="nav__logo-mark">A</span><span class="nav__logo-text">monte</span>
+          </a>
+        </p>
+        <p class="footer__tagline" data-i18n="footer_tagline">Индивидуальные маршруты по Черногории</p>
+        <p class="footer__copy">© 2026 Amonte</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="tours.js"></script>
+</body>
+</html>

@@ -39,15 +39,7 @@
         <span class="nav__logo-mark">A</span>
         <span class="nav__logo-text">monte</span>
       </a>
-
-      <!-- Language switcher -->
-      <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language">
-        <button class="lang-btn lang-btn--active" data-lang="ru" type="button">RU</button>
-        <button class="lang-btn" data-lang="en" type="button">EN</button>
-        <button class="lang-btn" data-lang="sr" type="button">SR</button>
-      </div>
-
-      <a href="#catalogue" class="nav__cta btn btn--primary btn--sm" id="nav-cta"><span data-i18n="nav_cta">Выбрать маршрут</span></a>
+      <a href="#catalogue" class="nav__cta btn btn--primary btn--sm" id="nav-cta">Выбрать маршрут</a>
     </div>
   </nav>
 
@@ -60,11 +52,11 @@
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
-      <div class="hero__badge" data-i18n="hero_badge">Из Будвы · На машине · Только вы</div>
+      <div class="hero__badge">Из Будвы · На машине · Только вы</div>
       <h1 class="hero__headline">Черногория без&nbsp;<em class="hero__gold">автобуса</em><br>и без&nbsp;толпы</h1>
-      <p class="hero__subheadline" data-i18n="hero_sub">Однодневные маршруты на машине с личным гидом.<br>Выбираете, куда ехать — мы знаем, что показать.</p>
-      <a href="#catalogue" class="btn btn--hero" id="hero-cta"><span data-i18n="hero_cta">Выбрать маршрут ↓</span></a>
-      <p class="hero__support" data-i18n="hero_support">Горы, каньоны, старые города у моря и места, о которых не пишут в путеводителях — за один день.</p>
+      <p class="hero__subheadline">Однодневные маршруты на машине с личным гидом.<br>Выбираете, куда ехать — мы знаем, что показать.</p>
+      <a href="#catalogue" class="btn btn--hero" id="hero-cta">Выбрать маршрут ↓</a>
+      <p class="hero__support">Горы, каньоны, старые города у моря и места, о которых не пишут в путеводителях — за один день.</p>
     </div>
     <div class="hero__scroll-hint" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -174,49 +166,13 @@
   ═══════════════════════════════════════ -->
   <section class="catalogue section" id="catalogue" aria-label="Каталог маршрутов">
     <div class="container">
-      <p class="section__eyebrow" data-i18n="cat_eyebrow">Маршруты</p>
-      <h2 class="section__title" data-i18n="cat_title">Выберите маршрут</h2>
-      <p class="section__subtitle" data-i18n="cat_sub">Готовые однодневные маршруты из Будвы. Каждый можно адаптировать под вас.</p>
+      <p class="section__eyebrow">Маршруты</p>
+      <h2 class="section__title">Выберите маршрут</h2>
+      <p class="section__subtitle">Готовые однодневные маршруты из Будвы. Каждый можно адаптировать под вас.</p>
 
-      <!-- TIME TABS -->
-      <div class="filter-tabs" role="tablist" aria-label="Фильтр по времени" id="time-tabs">
-        <button class="filter-tab filter-tab--active" role="tab" aria-selected="true" data-time="all" id="tab-all" type="button">
-          <span class="filter-tab__icon" aria-hidden="true">🗺</span>
-          <span data-i18n="tab_all">Все маршруты</span>
-        </button>
-        <button class="filter-tab" role="tab" aria-selected="false" data-time="short" id="tab-short" type="button">
-          <span class="filter-tab__icon" aria-hidden="true">⚡</span>
-          <span data-i18n="tab_short">До 4 ч</span>
-          <span class="filter-tab__hint" data-i18n="tab_short_hint">Короткий день</span>
-        </button>
-        <button class="filter-tab" role="tab" aria-selected="false" data-time="half" id="tab-half" type="button">
-          <span class="filter-tab__icon" aria-hidden="true">🌅</span>
-          <span data-i18n="tab_half">Полдня</span>
-          <span class="filter-tab__hint" data-i18n="tab_half_hint">~5–7 часов</span>
-        </button>
-        <button class="filter-tab" role="tab" aria-selected="false" data-time="full" id="tab-full" type="button">
-          <span class="filter-tab__icon" aria-hidden="true">🏔</span>
-          <span data-i18n="tab_full">Весь день</span>
-          <span class="filter-tab__hint" data-i18n="tab_full_hint">Горы и каньоны</span>
-        </button>
-      </div>
+      <div class="catalogue__grid">
 
-      <!-- VIBE TAGS -->
-      <div class="vibe-tags" role="group" aria-label="Фильтр по характеру" id="vibe-tags">
-        <button class="vibe-tag" data-vibe="sea" type="button"><span aria-hidden="true">🌊</span> <span data-i18n="vibe_sea">Море и залив</span></button>
-        <button class="vibe-tag" data-vibe="boat" type="button"><span aria-hidden="true">⛵</span> <span data-i18n="vibe_boat">Лодка</span></button>
-        <button class="vibe-tag" data-vibe="mountain" type="button"><span aria-hidden="true">⛰</span> <span data-i18n="vibe_mountain">Горы</span></button>
-        <button class="vibe-tag" data-vibe="monastery" type="button"><span aria-hidden="true">⛪</span> <span data-i18n="vibe_monastery">Монастыри</span></button>
-        <button class="vibe-tag" data-vibe="nature" type="button"><span aria-hidden="true">🌿</span> <span data-i18n="vibe_nature">Природа</span></button>
-        <button class="vibe-tag" data-vibe="city" type="button"><span aria-hidden="true">🏛</span> <span data-i18n="vibe_city">Старые города</span></button>
-      </div>
-
-      <!-- NO RESULTS -->
-      <p class="routes-empty" id="routes-empty" hidden data-i18n="routes_empty">По этим фильтрам маршрутов нет — попробуйте другой набор.</p>
-
-      <div class="catalogue__grid" id="catalogue-grid">
-
-        <article class="route-card" id="route-durmitor" data-time="full" data-vibes="mountain nature">
+        <article class="route-card" id="route-durmitor">
           <div class="route-card__img-wrap">
             <img src="img/route_durmitor.png" alt="Каньон Тары и горы Дурмитора — вид с высоты" class="route-card__img" loading="lazy">
             <div class="route-card__badge">⭐ Самый впечатляющий</div>
@@ -230,14 +186,12 @@
               <span>🗺 ~250 км от Будвы</span>
             </div>
             <p class="route-card__desc">Самый глубокий каньон Европы и дикие горы в одном дне. Смотровая над каньоном, сосновый лес, альпийские озёра. Сезон: май–октябрь.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>300 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Дурмитор" class="btn btn--primary btn--route" id="cta-durmitor" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 300 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Дурмитор" class="btn btn--primary btn--route" id="cta-durmitor" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
-        <article class="route-card" id="route-kotor" data-time="half" data-vibes="sea city">
+        <article class="route-card" id="route-kotor">
           <div class="route-card__img-wrap">
             <img src="img/route_kotor.png" alt="Боко-Которский залив и старый город Котор с высоты" class="route-card__img" loading="lazy">
           </div>
@@ -250,14 +204,12 @@
               <span>🗺 ~30 км от Будвы</span>
             </div>
             <p class="route-card__desc">Старый город внутри стен, подъём на крепость, маленький остров посреди залива — и тот самый вид, ради которого люди едут в Черногорию снова.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>100 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Котор" class="btn btn--primary btn--route" id="cta-kotor" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 100 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Котор" class="btn btn--primary btn--route" id="cta-kotor" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
-        <article class="route-card" id="route-skadar" data-time="half" data-vibes="boat nature">
+        <article class="route-card" id="route-skadar">
           <div class="route-card__img-wrap">
             <img src="img/route_skadar.png" alt="Скадарское озеро — лодки, кувшинки, зелёные холмы" class="route-card__img" loading="lazy">
           </div>
@@ -270,14 +222,12 @@
               <span>🗺 ~60 км от Будвы</span>
             </div>
             <p class="route-card__desc">Самое большое озеро Балкан. Лодка по воде, пеликаны, виноградники и локальный обед у воды. Маршрут для тех, кто хочет тишины и живой природы.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>100 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Скадар" class="btn btn--primary btn--route" id="cta-skadar" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 100 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Скадар" class="btn btn--primary btn--route" id="cta-skadar" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
-        <article class="route-card" id="route-lovcen" data-time="half" data-vibes="mountain monastery city">
+        <article class="route-card" id="route-lovcen">
           <div class="route-card__img-wrap">
             <img src="img/route_lovcen.png" alt="Серпантин Ловчена над облаками, вид на море" class="route-card__img" loading="lazy">
           </div>
@@ -290,14 +240,12 @@
               <span>🗺 ~40 км от Будвы</span>
             </div>
             <p class="route-card__desc">Серпантин в облаках, 461 ступенька на вершину и вид на всю страну. Старая столица Цетинье — история без туристической шелухи.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>120 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Ловчен" class="btn btn--primary btn--route" id="cta-lovcen" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 120 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Ловчен" class="btn btn--primary btn--route" id="cta-lovcen" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
-        <article class="route-card" id="route-ostrog" data-time="half" data-vibes="monastery mountain">
+        <article class="route-card" id="route-ostrog">
           <div class="route-card__img-wrap">
             <img src="img/route_ostrog.png" alt="Монастырь Острог — белоснежный монастырь в отвесной скале" class="route-card__img" loading="lazy">
           </div>
@@ -310,14 +258,12 @@
               <span>🗺 ~90 км от Будвы</span>
             </div>
             <p class="route-card__desc">Монастырь, вырубленный прямо в отвесной скале. Место паломничества и одновременно — одно из самых сильных визуально мест страны. Работает круглый год.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>160 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Острог" class="btn btn--primary btn--route" id="cta-ostrog" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 160 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Острог" class="btn btn--primary btn--route" id="cta-ostrog" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
-        <article class="route-card" id="route-stari-bar" data-time="short" data-vibes="city nature">
+        <article class="route-card" id="route-stari-bar">
           <div class="route-card__img-wrap">
             <img src="img/route_stari_bar.png" alt="Руины Старого Бара — средневековая крепость среди оливковых рощ" class="route-card__img" loading="lazy">
           </div>
@@ -330,10 +276,8 @@
               <span>🗺 ~35 км от Будвы</span>
             </div>
             <p class="route-card__desc">Руины средневекового города-крепости и самые старые оливковые деревья на Балканах — некоторым более 2000 лет. Маршрут для тех, кто хочет истории без суеты.</p>
-            <div class="route-card__footer">
-              <div class="route-card__price"><span data-i18n="from">от</span> <strong>120 €</strong> <span class="route-card__price-note" data-i18n="price_per_group">за группу</span></div>
-              <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Старый%20Бар" class="btn btn--primary btn--route" id="cta-stari-bar" target="_blank" rel="noopener" data-i18n="r_cta">Забронировать этот маршрут</a>
-            </div>
+            <p class="route-card__price">от 120 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Старый%20Бар" class="btn btn--primary btn--route" id="cta-stari-bar" target="_blank" rel="noopener">Забронировать этот маршрут</a>
           </div>
         </article>
 
