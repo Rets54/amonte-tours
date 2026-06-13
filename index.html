@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amonte — Черногория без автобуса и без толпы</title>
+  <meta name="description" content="Однодневные маршруты по Черногории на машине с личным гидом. Дурмитор, Котор, Скадарское озеро, Ловчен — выбираете, куда ехать, мы знаем, что показать.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Amonte — главная">
+        <span class="nav__logo-mark">A</span>
+        <span class="nav__logo-text">monte</span>
+      </a>
+      <a href="#catalogue" class="nav__cta btn btn--primary btn--sm" id="nav-cta">Выбрать маршрут</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Главный экран">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="img/hero_montenegro.png" alt="Панорама Черногории с горной дороги над облаками" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">Из Будвы · На машине · Только вы</div>
+      <h1 class="hero__headline">Черногория без&nbsp;<em class="hero__gold">автобуса</em><br>и без&nbsp;толпы</h1>
+      <p class="hero__subheadline">Однодневные маршруты на машине с личным гидом.<br>Выбираете, куда ехать — мы знаем, что показать.</p>
+      <a href="#catalogue" class="btn btn--hero" id="hero-cta">Выбрать маршрут ↓</a>
+      <p class="hero__support">Горы, каньоны, старые города у моря и места, о которых не пишут в путеводителях — за один день.</p>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTRAST / PAIN
+  ═══════════════════════════════════════ -->
+  <section class="contrast section" id="contrast" aria-label="Сравнение форматов">
+    <div class="container">
+      <h2 class="section__title">Как обычно ездят —<br>и почему это не всегда работает</h2>
+      <div class="contrast__grid">
+
+        <div class="contrast__card contrast__card--bad" role="article">
+          <div class="contrast__icon" aria-hidden="true">🚌</div>
+          <h3 class="contrast__card-title">Автобус с группой</h3>
+          <ul class="contrast__list">
+            <li>30–40 человек</li>
+            <li>Жёсткий маршрут, никакой гибкости</li>
+            <li>Останавливаетесь там, где удобно водителю</li>
+            <li>Половину времени — в пробке на трассе</li>
+          </ul>
+        </div>
+
+        <div class="contrast__card contrast__card--bad" role="article">
+          <div class="contrast__icon" aria-hidden="true">🚖</div>
+          <h3 class="contrast__card-title">Такси без гида</h3>
+          <ul class="contrast__list">
+            <li>Дорого, если ехать далеко</li>
+            <li>Водитель не рассказывает — он везёт</li>
+            <li>Вы сами разбираетесь, что смотреть и зачем</li>
+            <li>Можно промахнуться с местами</li>
+          </ul>
+        </div>
+
+        <div class="contrast__card contrast__card--good" role="article">
+          <div class="contrast__icon" aria-hidden="true">✅</div>
+          <h3 class="contrast__card-title">Amonte — личный гид на машине</h3>
+          <ul class="contrast__list contrast__list--good">
+            <li>Только вы (или ваша пара / семья)</li>
+            <li>Маршрут под ваши интересы</li>
+            <li>Гид объясняет, рассказывает, ведёт</li>
+            <li>Едете туда, куда хочется — в своём темпе</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WHAT WE OFFER
+  ═══════════════════════════════════════ -->
+  <section class="offer section section--light" id="offer" aria-label="Что мы предлагаем">
+    <div class="container">
+      <div class="offer__inner">
+        <div class="offer__text">
+          <p class="section__eyebrow">Формат</p>
+          <h2 class="section__title section__title--left">Что это такое</h2>
+          <p class="offer__lead">Мы не туристическое агентство. Мы не продаём пакеты.</p>
+          <p class="offer__body">Это однодневная поездка по Черногории — на машине, с живым гидом, по маршруту, который согласован под вас. Национальные парки, каньоны, старые города у моря, горные виды — выбираете то, что хочется увидеть. Мы знаем, где лучшая точка обзора, где остановиться на обед, куда пойти пешком и что за всем этим стоит.</p>
+        </div>
+        <ul class="offer__features" aria-label="Преимущества формата">
+          <li class="offer__feature">
+            <span class="offer__feature-icon" aria-hidden="true">🚗</span>
+            <div>
+              <strong>На машине</strong>
+              <span>Комфортно, без пересадок</span>
+            </div>
+          </li>
+          <li class="offer__feature">
+            <span class="offer__feature-icon" aria-hidden="true">🗺</span>
+            <div>
+              <strong>Маршрут под вас</strong>
+              <span>Согласовываем заранее под ваши интересы</span>
+            </div>
+          </li>
+          <li class="offer__feature">
+            <span class="offer__feature-icon" aria-hidden="true">🗣</span>
+            <div>
+              <strong>Гид рядом</strong>
+              <span>Рассказывает, объясняет, рекомендует</span>
+            </div>
+          </li>
+          <li class="offer__feature">
+            <span class="offer__feature-icon" aria-hidden="true">⏱</span>
+            <div>
+              <strong>Ваш темп</strong>
+              <span>Никто не торопит</span>
+            </div>
+          </li>
+          <li class="offer__feature">
+            <span class="offer__feature-icon" aria-hidden="true">👥</span>
+            <div>
+              <strong>Только вы</strong>
+              <span>1 человек, пара или семья до 6 человек</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CATALOGUE
+  ═══════════════════════════════════════ -->
+  <section class="catalogue section" id="catalogue" aria-label="Каталог маршрутов">
+    <div class="container">
+      <p class="section__eyebrow">Маршруты</p>
+      <h2 class="section__title">Выберите маршрут</h2>
+      <p class="section__subtitle">Готовые однодневные маршруты из Будвы. Каждый можно адаптировать под вас.</p>
+
+      <div class="catalogue__grid">
+
+        <article class="route-card" id="route-durmitor">
+          <div class="route-card__img-wrap">
+            <img src="img/route_durmitor.png" alt="Каньон Тары и горы Дурмитора — вид с высоты" class="route-card__img" loading="lazy">
+            <div class="route-card__badge">⭐ Самый впечатляющий</div>
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Дурмитор и каньон Тары</h3>
+            <p class="route-card__tagline">Самый впечатляющий маршрут Черногории</p>
+            <div class="route-card__meta">
+              <span>📍 Жабляк · Каньон Тары · Нацпарк Дурмитор</span>
+              <span>⏱ 10–11 часов</span>
+              <span>🗺 ~250 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Самый глубокий каньон Европы и дикие горы в одном дне. Смотровая над каньоном, сосновый лес, альпийские озёра. Сезон: май–октябрь.</p>
+            <p class="route-card__price">от 300 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Дурмитор" class="btn btn--primary btn--route" id="cta-durmitor" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="route-kotor">
+          <div class="route-card__img-wrap">
+            <img src="img/route_kotor.png" alt="Боко-Которский залив и старый город Котор с высоты" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Боко-Которский залив и старый Котор</h3>
+            <p class="route-card__tagline">Морская история и виды, которые остаются навсегда</p>
+            <div class="route-card__meta">
+              <span>📍 Котор · Крепостные стены · Пераст · Остров Госпа</span>
+              <span>⏱ 6–7 часов</span>
+              <span>🗺 ~30 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Старый город внутри стен, подъём на крепость, маленький остров посреди залива — и тот самый вид, ради которого люди едут в Черногорию снова.</p>
+            <p class="route-card__price">от 100 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Котор" class="btn btn--primary btn--route" id="cta-kotor" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="route-skadar">
+          <div class="route-card__img-wrap">
+            <img src="img/route_skadar.png" alt="Скадарское озеро — лодки, кувшинки, зелёные холмы" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Скадарское озеро</h3>
+            <p class="route-card__tagline">Природа, тишина и черногорское вино у воды</p>
+            <div class="route-card__meta">
+              <span>📍 Скадарское озеро · Вирпазар · Рийека Крноевича</span>
+              <span>⏱ 6–8 часов</span>
+              <span>🗺 ~60 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Самое большое озеро Балкан. Лодка по воде, пеликаны, виноградники и локальный обед у воды. Маршрут для тех, кто хочет тишины и живой природы.</p>
+            <p class="route-card__price">от 100 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Скадар" class="btn btn--primary btn--route" id="cta-skadar" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="route-lovcen">
+          <div class="route-card__img-wrap">
+            <img src="img/route_lovcen.png" alt="Серпантин Ловчена над облаками, вид на море" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Ловчен и Мавзолей Негоша</h3>
+            <p class="route-card__tagline">Над Черногорией — буквально</p>
+            <div class="route-card__meta">
+              <span>📍 Нацпарк Ловчен · Мавзолей Негоша · Цетинье</span>
+              <span>⏱ 5–6 часов</span>
+              <span>🗺 ~40 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Серпантин в облаках, 461 ступенька на вершину и вид на всю страну. Старая столица Цетинье — история без туристической шелухи.</p>
+            <p class="route-card__price">от 120 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Ловчен" class="btn btn--primary btn--route" id="cta-lovcen" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="route-ostrog">
+          <div class="route-card__img-wrap">
+            <img src="img/route_ostrog.png" alt="Монастырь Острог — белоснежный монастырь в отвесной скале" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Острог — монастырь в скале</h3>
+            <p class="route-card__tagline">Самое необычное место Черногории</p>
+            <div class="route-card__meta">
+              <span>📍 Монастырь Острог · Никшич (опционально)</span>
+              <span>⏱ 5–6 часов</span>
+              <span>🗺 ~90 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Монастырь, вырубленный прямо в отвесной скале. Место паломничества и одновременно — одно из самых сильных визуально мест страны. Работает круглый год.</p>
+            <p class="route-card__price">от 160 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Острог" class="btn btn--primary btn--route" id="cta-ostrog" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="route-stari-bar">
+          <div class="route-card__img-wrap">
+            <img src="img/route_stari_bar.png" alt="Руины Старого Бара — средневековая крепость среди оливковых рощ" class="route-card__img" loading="lazy">
+          </div>
+          <div class="route-card__body">
+            <h3 class="route-card__title">Старый Бар и оливковые рощи</h3>
+            <p class="route-card__tagline">История на юге страны</p>
+            <div class="route-card__meta">
+              <span>📍 Старый Бар · Руины античного города · Оливковые рощи</span>
+              <span>⏱ 4–5 часов</span>
+              <span>🗺 ~35 км от Будвы</span>
+            </div>
+            <p class="route-card__desc">Руины средневекового города-крепости и самые старые оливковые деревья на Балканах — некоторым более 2000 лет. Маршрут для тех, кто хочет истории без суеты.</p>
+            <p class="route-card__price">от 120 €</p>
+            <a href="https://wa.me/38268458188?text=Хочу%20забронировать%20маршрут%20Старый%20Бар" class="btn btn--primary btn--route" id="cta-stari-bar" target="_blank" rel="noopener">Забронировать этот маршрут</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="catalogue__microcopy">Не нашли то, что искали? <a href="https://wa.me/38268458188?text=Хочу%20согласовать%20маршрут" id="cta-custom" target="_blank" rel="noopener">Напишите нам</a> — согласуем маршрут под вас.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section class="how section section--light" id="how-it-works" aria-label="Как это работает">
+    <div class="container">
+      <p class="section__eyebrow">Процесс</p>
+      <h2 class="section__title">Как это работает</h2>
+      <p class="section__subtitle">Никаких сложностей. От «хочу поехать» до «едем» — четыре шага.</p>
+
+      <ol class="how__steps" role="list">
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">01</div>
+          <div class="how__step-content">
+            <h3>Выбираете маршрут</h3>
+            <p>Смотрите каталог и выбираете, что хочется увидеть. Или пишете нам — подскажем, что подойдёт под ваши интересы и даты.</p>
+          </div>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">02</div>
+          <div class="how__step-content">
+            <h3>Согласовываем детали</h3>
+            <p>Время отправления, точку встречи, пожелания по темпу и остановкам. Обычно это занимает одно сообщение.</p>
+          </div>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">03</div>
+          <div class="how__step-content">
+            <h3>Подтверждаете бронь</h3>
+            <p>Мы подтверждаем маршрут и дату. Оплата — при встрече или заранее, как удобно.</p>
+          </div>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">04</div>
+          <div class="how__step-content">
+            <h3>Едем</h3>
+            <p>В назначенное утро гид забирает вас из отеля или с удобного места. Дальше — маршрут, дорога и Черногория.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       INCLUDED / EXCLUDED
+  ═══════════════════════════════════════ -->
+  <section class="included section" id="included" aria-label="Что входит в стоимость">
+    <div class="container">
+      <p class="section__eyebrow">Честность</p>
+      <h2 class="section__title">Что входит — и что нет</h2>
+      <p class="section__subtitle">Без скрытых платежей. Вы знаете заранее, за что платите.</p>
+
+      <div class="included__grid">
+        <div class="included__col included__col--yes">
+          <div class="included__col-header">
+            <span class="included__col-icon" aria-hidden="true">✅</span>
+            <h3>Включено</h3>
+          </div>
+          <ul class="included__list" aria-label="Что включено">
+            <li>Машина и водитель-гид на весь маршрут</li>
+            <li>Транспорт по всему маршруту</li>
+            <li>Рассказ о местах — история, контекст, рекомендации</li>
+            <li>Помощь с выбором ресторана или кафе по дороге</li>
+            <li>Гибкость маршрута внутри дня</li>
+          </ul>
+        </div>
+        <div class="included__col included__col--no">
+          <div class="included__col-header">
+            <span class="included__col-icon" aria-hidden="true">❌</span>
+            <h3>Не входит</h3>
+          </div>
+          <ul class="included__list" aria-label="Что не включено">
+            <li>Входные билеты в нацпарки <em>(обычно 3–5€, оплачивается на месте)</em></li>
+            <li>Еда и напитки</li>
+            <li>Билеты в музеи</li>
+            <li>Трансфер в аэропорт или за пределы Черногории</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="included__microcopy">Стоимость входных билетов минимальна. Мы предупреждаем заранее — никаких сюрпризов на кассе.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TRUST / EMOTIONS
+  ═══════════════════════════════════════ -->
+  <section class="trust section section--light" id="trust" aria-label="Отзывы и впечатления">
+    <div class="container">
+      <p class="section__eyebrow">Впечатления</p>
+      <h2 class="section__title">Это не картинка из каталога</h2>
+      <p class="section__subtitle">Каждый снимок — это чьё-то «вау». Каньон Тары с высоты. Котор в пять утра, когда туристов ещё нет. Закат над Скадарским озером.</p>
+
+      <div class="trust__gallery" aria-label="Галерея маршрутов">
+        <div class="trust__gallery-item"><img src="img/route_durmitor.png" alt="Каньон Тары и горы Дурмитора" loading="lazy"></div>
+        <div class="trust__gallery-item trust__gallery-item--tall"><img src="img/route_kotor.png" alt="Боко-Которский залив" loading="lazy"></div>
+        <div class="trust__gallery-item"><img src="img/route_lovcen.png" alt="Серпантин Ловчена" loading="lazy"></div>
+        <div class="trust__gallery-item"><img src="img/route_ostrog.png" alt="Монастырь Острог в скале" loading="lazy"></div>
+        <div class="trust__gallery-item trust__gallery-item--wide"><img src="img/route_skadar.png" alt="Скадарское озеро" loading="lazy"></div>
+      </div>
+
+      <p class="trust__body">Сюда привозят тех, кто хочет Черногорию настоящую — не ту, что из Instagram-геотега на пляже.</p>
+
+      <div class="trust__quotes" aria-label="Отзывы гостей">
+        <blockquote class="trust__quote">
+          <p>«Поднялись на крепость в Которе рано утром — вид на залив был только наш. Это именно то, чего хотелось.»</p>
+          <footer>— Марина, Москва</footer>
+        </blockquote>
+        <blockquote class="trust__quote">
+          <p>«Гид знал такие места, о которых нигде не написано. Мы видели настоящую Черногорию, а не открытку.»</p>
+          <footer>— Андрей и Оля, Санкт-Петербург</footer>
+        </blockquote>
+        <blockquote class="trust__quote">
+          <p>«Дурмитор — это было сильнейшее впечатление за всю поездку. Спасибо, что уговорили туда поехать.»</p>
+          <footer>— Семья Козловых</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════ -->
+  <section class="gallery section" id="gallery" aria-label="Фотогалерея">
+    <div class="container">
+      <p class="section__eyebrow">Фотографии</p>
+      <h2 class="section__title">Живые снимки с маршрутов</h2>
+      <p class="section__subtitle">Горы, каньоны, заливы — всё это вы увидите за один день. Снимки сделаны во время реальных поездок.</p>
+
+      <div class="gallery__grid" id="gallery-grid">
+        <a href="../photos/IMG_9661.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9661.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9662.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9662.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9663.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9663.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9665.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9665.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9666.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9666.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9667.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9667.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9668.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9668.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9669.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9669.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9670.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9670.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9671.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9671.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9672.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9672.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9673.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9673.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9674.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9674.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9677.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9677.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9678.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9678.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9679.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9679.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9680.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9680.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9686.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9686.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9687.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9687.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9688.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9688.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9689.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9689.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9690.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9690.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9691.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9691.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9692.jpg" class="gallery__item glightbox" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9692.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <!-- скрытые фото, показываются по кнопке «Смотреть все» -->
+        <a href="../photos/IMG_9693.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9693.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9694.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9694.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9695.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9695.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9696.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9696.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9697.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9697.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9698.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9698.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9699.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9699.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9700.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9700.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9701.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9701.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9702.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9702.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9703.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9703.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9704.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9704.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9705.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9705.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9707.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9707.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9708.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9708.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9709.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9709.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9710.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9710.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9711.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9711.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9712.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9712.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9713.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9713.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9714.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9714.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9715.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9715.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9716.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9716.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9717.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9717.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9718.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9718.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9719.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9719.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9720.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9720.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9721.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9721.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9722.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9722.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9723.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9723.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9724.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9724.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9725.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9725.jpg" alt="Черногория" loading="lazy">
+        </a>
+        <a href="../photos/IMG_9726.jpg" class="gallery__item glightbox gallery__item--hidden" data-gallery="amonte" data-title="Черногория — маршруты Amonte">
+          <img src="../photos/IMG_9726.jpg" alt="Черногория" loading="lazy">
+        </a>
+      </div>
+
+      <div class="gallery__footer">
+        <button class="btn btn--outline" id="gallery-expand-btn" type="button">Смотреть все фотографии (+41)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════ -->
+  <section class="final-cta section" id="contact" aria-label="Забронировать маршрут">
+    <div class="container">
+      <div class="final-cta__inner">
+        <h2 class="final-cta__headline">Готовы показать вам Черногорию</h2>
+        <p class="final-cta__body">Укажите, какой маршрут интересует и удобные даты — ответим в течение часа.</p>
+
+        <!-- Форма -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="cf-name" class="contact-form__label">Ваше имя</label>
+              <input type="text" id="cf-name" name="name" class="contact-form__input"
+                placeholder="Как вас зовут?" autocomplete="name" maxlength="80">
+            </div>
+            <div class="contact-form__field">
+              <label for="cf-contact" class="contact-form__label">Telegram или WhatsApp <span class="contact-form__required">*</span></label>
+              <input type="text" id="cf-contact" name="contact" class="contact-form__input"
+                placeholder="@username или +7..." autocomplete="tel" maxlength="80" required>
+              <span class="contact-form__error" id="cf-contact-error">Укажите, как с вами связаться</span>
+            </div>
+          </div>
+          <div class="contact-form__field">
+            <label for="cf-message" class="contact-form__label">Что хотите увидеть / вопрос</label>
+            <textarea id="cf-message" name="message" class="contact-form__textarea"
+              placeholder="Дурмитор, Котор, Скадар... или просто — не знаю, помогите выбрать" rows="4" maxlength="600"></textarea>
+          </div>
+          <div class="contact-form__actions">
+            <button type="submit" class="btn btn--tg contact-form__submit" id="cf-submit-tg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z" fill="currentColor"/></svg>
+              Отправить в Telegram
+            </button>
+            <a href="https://wa.me/38268458188" class="btn btn--wa" id="final-cta-wa" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+              Написать в WhatsApp
+            </a>
+          </div>
+          <p class="contact-form__note">Нажимая «Отправить в Telegram», вы перейдёте в приложение с готовым сообщением.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__logo">
+          <span class="nav__logo-mark">A</span><span class="nav__logo-text">monte</span>
+        </p>
+        <p class="footer__tagline">Индивидуальные маршруты по Черногории</p>
+        <p class="footer__copy">© 2026 Amonte</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,673 @@
+/* ═══════════════════════════════════════════
+   AMONTE — tours.css
+   montenegro-private-tours page extensions
+   Warm & Scenic design direction
+═══════════════════════════════════════════ */
+
+/* ─── LANGUAGE SWITCHER ─── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 100px;
+  padding: 3px;
+  margin-inline: auto 8px;
+}
+
+.nav--scrolled .lang-switcher {
+  background: rgba(19,19,16,.06);
+  border-color: var(--color-border);
+}
+
+.lang-btn {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--color-text-light);
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  line-height: 1;
+}
+
+.nav--scrolled .lang-btn {
+  color: var(--color-text-muted);
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.nav--scrolled .lang-btn:hover {
+  background: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+.lang-btn--active {
+  background: rgba(255,255,255,.9) !important;
+  color: var(--color-bg-dark) !important;
+}
+
+.nav--scrolled .lang-btn--active {
+  background: var(--color-accent) !important;
+  color: #fff !important;
+}
+
+/* nav inner flex for 3 items */
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ─── CONTRAST TABLE ─── */
+.contrast__table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 48px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.contrast__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: var(--color-bg);
+}
+
+.contrast__table th,
+.contrast__table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.contrast__table thead th {
+  background: var(--color-bg-light);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.contrast__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.contrast__table tbody tr:hover {
+  background: rgba(46,125,82,.03);
+}
+
+.contrast__table th.contrast__bad,
+.contrast__table td.contrast__bad {
+  color: #B94646;
+  background: rgba(185,70,70,.04);
+}
+
+.contrast__table th.contrast__good,
+.contrast__table td.contrast__good {
+  color: var(--color-accent-dark);
+  background: rgba(46,125,82,.06);
+  font-weight: 500;
+}
+
+.contrast__table td:first-child {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/* ─── ROUTE CARD — CUSTOM VARIANT ─── */
+.route-card--custom {
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, #f0f9f4 100%);
+  border: 2px dashed var(--color-good-border);
+}
+
+.route-card__body--custom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 32px;
+  gap: 16px;
+}
+
+.route-card__custom-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* ─── GUIDE SECTION ─── */
+.guide__inner {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.guide__photo-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.guide__photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.guide__langs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(19,19,16,.9) 0%, transparent 100%);
+  padding: 32px 20px 20px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.guide__langs span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 100px;
+  padding: 4px 10px;
+  letter-spacing: .03em;
+}
+
+@media (max-width: 900px) {
+  .guide__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .guide__photo-wrap {
+    max-width: 400px;
+  }
+
+  .guide__photo {
+    aspect-ratio: 4/3;
+  }
+}
+
+/* ─── REVIEWS GRID ─── */
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .reviews__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── FAQ ─── */
+.faq__list {
+  max-width: 760px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faq__item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg);
+  transition: box-shadow var(--transition);
+}
+
+.faq__item:has(.faq__q[aria-expanded="true"]) {
+  box-shadow: var(--shadow-md);
+}
+
+.faq__q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+  transition: background var(--transition);
+}
+
+.faq__q:hover {
+  background: var(--color-bg-light);
+}
+
+.faq__q::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.faq__q[aria-expanded="true"]::after {
+  content: '−';
+  transform: none;
+}
+
+.faq__a {
+  padding: 0 24px 18px;
+}
+
+.faq__a p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ─── FINAL CTA BUTTONS ─── */
+.final-cta__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 32px 0 16px;
+}
+
+.btn--lg {
+  padding: 16px 32px;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.final-cta__note {
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,.65);
+  margin-top: 8px;
+}
+
+/* ─── SECTION LIGHT variant hero badge tweak ─── */
+.hero__badge {
+  display: inline-block;
+  background: rgba(201,168,76,.18);
+  border: 1px solid rgba(201,168,76,.35);
+  color: var(--color-gold-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+/* ─── FADE ANIMATION (mirrors main style.css) ─── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── PRICE MATH BLOCK ─── */
+.price-math {
+  margin-top: 56px;
+  padding: 40px 48px;
+  background: var(--color-bg-light);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.price-math__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.price-math__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 32px;
+}
+
+.price-math__grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.price-math__vs {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: .08em;
+  flex-shrink: 0;
+}
+
+.price-math__card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.price-math__card--private {
+  border-color: var(--color-accent);
+  background: rgba(46,125,82,.04);
+  box-shadow: 0 0 0 4px rgba(46,125,82,.07);
+}
+
+.price-math__icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.price-math__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.price-math__formula {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
+.price-math__total {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.price-math__total--group {
+  color: #B94646;
+}
+
+.price-math__total--private {
+  color: var(--color-accent);
+}
+
+.price-math__note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.price-math__conclusion {
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.price-math__conclusion strong {
+  color: var(--color-accent-dark);
+}
+
+/* ─── FILTER TABS (time) ─── */
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 16px;
+}
+
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: center;
+  line-height: 1.2;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.filter-tab__icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.filter-tab__hint {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  opacity: .7;
+  margin-top: 2px;
+}
+
+.filter-tab:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(46,125,82,.04);
+}
+
+.filter-tab--active {
+  background: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: #fff !important;
+}
+
+.filter-tab--active .filter-tab__hint {
+  color: rgba(255,255,255,.75) !important;
+  opacity: 1;
+}
+
+/* ─── VIBE TAGS ─── */
+.vibe-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.vibe-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.vibe-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.vibe-tag--active {
+  background: rgba(46,125,82,.1);
+  border-color: var(--color-accent) !important;
+  color: var(--color-accent-dark) !important;
+  font-weight: 600;
+}
+
+/* ─── ROUTE CARD FOOTER (price + CTA row) ─── */
+.route-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.route-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-family: var(--font-sans);
+}
+
+.route-card__price span:first-child {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.route-card__price strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  font-family: var(--font-serif);
+}
+
+.route-card__price-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ensure card body uses flex column so footer stays at bottom */
+.route-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── ROUTES EMPTY STATE ─── */
+.routes-empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed var(--color-border);
+  margin: 8px 0 24px;
+}
+
+/* hide/show animation for route cards */
+.route-card[data-hidden] {
+  display: none;
+}
+
+/* ─── RESPONSIVE — mobile ─── */
+@media (max-width: 700px) {
+  .price-math {
+    padding: 28px 20px;
+  }
+
+  .price-math__grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .price-math__card {
+    max-width: 100%;
+  }
+
+  .price-math__vs {
+    text-align: center;
+  }
+
+  .filter-tabs {
+    gap: 8px;
+  }
+
+  .filter-tab {
+    min-width: 80px;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contrast__table th,
+  .contrast__table td {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  .route-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .route-card__footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .final-cta__btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .final-cta__btns .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .lang-switcher {
+    margin-inline: auto 0;
+  }
+}

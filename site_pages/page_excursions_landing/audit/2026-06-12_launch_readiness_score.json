@@ -1,0 +1,48 @@
+{
+  "page_name": "Amonte — Черногория без автобуса и без толпы",
+  "page_scope_label": "excursions_landing",
+  "page_type": "landing_page",
+  "launch_context": "direct_launch",
+  "audit_date": "2026-06-12",
+
+  "strategy_score": 9,
+  "strategy_notes": "Чёткий page role. Один интент, одна аудитория. Без dilution. Архитектура соответствует brief 1:1.",
+
+  "semantic_score": 7,
+  "semantic_notes": "Semantic stage не применялся целенаправленно. Для direct_launch не блокер. Основные запросы покрыты органично в copy. Alt-тексты слабые.",
+
+  "conversion_score": 8,
+  "conversion_notes": "Hero сильный. Contrast-блок работает. Каталог — сердце страницы. CTA ясны. Минус: нет цены, friction при неизвестном бюджете. Фиктивные отзывы снижают trust в момент принятия решения.",
+
+  "design_score": 9,
+  "design_notes": "Premium Clarity + Cinematic Discovery. Ken Burns, gold accent, dark palette, реальная галерея. Явно выше среднего. AI-фото в route cards — единственное слабое место дизайна.",
+
+  "technical_score": 8,
+  "technical_notes": "Form validation, error states, WhatsApp/Telegram CTA — работают. GLightbox через CDN — внешняя зависимость. Нет favicon. Нет OG-тегов. Год в footer устарел.",
+
+  "html_accessibility_score": 9,
+  "html_accessibility_notes": "Весь core content доступен в static HTML. JS только усиливает UI. Graceful fallback для анимаций. Alt-тексты в галерее неинформативны.",
+
+  "overall_score": 8.3,
+
+  "launch_status": "ready_with_minor_warnings",
+
+  "critical_blockers": [
+    "Фиктивные отзывы (trust__quotes) — убрать или заменить на реальные",
+    "Проверить Telegram handle amonter в app.js",
+    "Добавить favicon"
+  ],
+
+  "warnings": [
+    "AI-фото в route cards — заменить на реальные снимки из /photos/",
+    "Нет цены/ценового диапазона — добавить хотя бы ориентир",
+    "Alt-тексты в gallery__grid — сделать описательными",
+    "Нет OG-метатегов (og:title, og:description, og:image)",
+    "Footer: обновить год с 2025 на 2026"
+  ],
+
+  "html_delivery_mode": "server_visible",
+
+  "next_skill": null,
+  "next_skill_why": "После закрытия critical blockers страница готова к прямому запуску. Следующий шаг — хостинг и домен."
+}
