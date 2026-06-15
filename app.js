@@ -306,6 +306,38 @@
       r6_tagline: 'История на юге страны',
       r6_desc: 'Руины средневекового города-крепости и самые старые оливковые деревья на Балканах — некоторым более 2000 лет. Маршрут для тех, кто хочет истории без суеты.',
 
+      r1_meta_loc: 'Жабляк · Каньон Тары · Нацпарк Дурмитор',
+      r1_meta_dur: '⏱ 10–11 часов',
+      r1_meta_km: '🗺 ~250 км от Будвы',
+      r1_price: 'от 300 €',
+
+      r2_meta_loc: 'Котор · Крепостные стены · Пераст · Остров Госпа',
+      r2_meta_dur: '⏱ 6–7 часов',
+      r2_meta_km: '🗺 ~30 км от Будвы',
+      r2_price: 'от 100 €',
+
+      r3_meta_loc: 'Скадарское озеро · Вирпазар · Рийека Крноевича',
+      r3_meta_dur: '⏱ 6–8 часов',
+      r3_meta_km: '🗺 ~60 км от Будвы',
+      r3_price: 'от 100 €',
+
+      r4_meta_loc: 'Нацпарк Ловчен · Мавзолей Негоша · Цетинье',
+      r4_meta_dur: '⏱ 5–6 часов',
+      r4_meta_km: '🗺 ~40 км от Будвы',
+      r4_price: 'от 120 €',
+
+      r5_meta_loc: 'Монастырь Острог · Никшич (опционально)',
+      r5_meta_dur: '⏱ 5–6 часов',
+      r5_meta_km: '🗺 ~90 км от Будвы',
+      r5_price: 'от 160 €',
+
+      r6_meta_loc: 'Старый Бар · Руины античного города · Оливковые рощи',
+      r6_meta_dur: '⏱ 4–5 часов',
+      r6_meta_km: '🗺 ~35 км от Будвы',
+      r6_price: 'от 120 €',
+
+      catalogue_microcopy_full: 'Не нашли то, что искали? <a href="https://wa.me/38268458188?text=Хочу%20согласовать%20маршрут" id="cta-custom" target="_blank" rel="noopener">Напишите нам</a> — согласуем маршрут под вас.',
+
       faq_eyebrow: 'FAQ',
       faq_title:   'Частые вопросы',
       faq1_q: 'Чем это отличается от групповой экскурсии?',
@@ -473,6 +505,38 @@
       r6_tagline: 'History in the south of the country',
       r6_desc: 'Ruins of a medieval fortress-city and the oldest olive trees in the Balkans \u2014 some over 2,000 years old. A route for those who want history without the hustle.',
 
+      r1_meta_loc: 'Zabljak · Tara Canyon · Durmitor National Park',
+      r1_meta_dur: '\u23f1 10\u201311 hours',
+      r1_meta_km: '\U0001f5fa ~250 km from Budva',
+      r1_price: 'from 300 \u20ac',
+
+      r2_meta_loc: 'Kotor · City Walls · Perast · Our Lady Island',
+      r2_meta_dur: '\u23f1 6\u20137 hours',
+      r2_meta_km: '\U0001f5fa ~30 km from Budva',
+      r2_price: 'from 100 \u20ac',
+
+      r3_meta_loc: 'Skadar Lake · Virpazar · Rijeka Crnojevica',
+      r3_meta_dur: '\u23f1 6\u20138 hours',
+      r3_meta_km: '\U0001f5fa ~60 km from Budva',
+      r3_price: 'from 100 \u20ac',
+
+      r4_meta_loc: 'Lov\u010den NP · Njego\u0161 Mausoleum · Cetinje',
+      r4_meta_dur: '\u23f1 5\u20136 hours',
+      r4_meta_km: '\U0001f5fa ~40 km from Budva',
+      r4_price: 'from 120 \u20ac',
+
+      r5_meta_loc: 'Ostrog Monastery · Nik\u0161i\u0107 (optional)',
+      r5_meta_dur: '\u23f1 5\u20136 hours',
+      r5_meta_km: '\U0001f5fa ~90 km from Budva',
+      r5_price: 'from 160 \u20ac',
+
+      r6_meta_loc: 'Old Bar · Ancient Town Ruins · Olive Groves',
+      r6_meta_dur: '\u23f1 4\u20135 hours',
+      r6_meta_km: '\U0001f5fa ~35 km from Budva',
+      r6_price: 'from 120 \u20ac',
+
+      catalogue_microcopy_full: 'Can\'t find what you\'re looking for? <a href="https://wa.me/38268458188?text=I+want+a+custom+route" id="cta-custom" target="_blank" rel="noopener">Contact us</a> \u2014 we\'ll plan a route for you.',
+
       faq_eyebrow: 'FAQ',
       faq_title:   'Frequently Asked Questions',
       faq1_q: 'How is this different from a group tour?',
@@ -639,6 +703,38 @@
       r6_title: 'Stari Bar i maslinovi gajevi',
       r6_tagline: 'Istorija na jugu zemlje',
       r6_desc: 'Ruine srednovjekovnog grada-tvrđave i najstarije masline na Balkanu \u2014 nekima više od 2000 godina. Ruta za one koji žle istoriju bez vreve.',
+
+      r1_meta_loc: 'Zabljak · Kanjon Tare · NP Durmitor',
+      r1_meta_dur: '\u23f1 10\u201311 sati',
+      r1_meta_km: '\U0001f5fa ~250 km od Budve',
+      r1_price: 'od 300 \u20ac',
+
+      r2_meta_loc: 'Kotor · Gradske zidine · Perast · Ostrvo Gospa',
+      r2_meta_dur: '\u23f1 6\u20137 sati',
+      r2_meta_km: '\U0001f5fa ~30 km od Budve',
+      r2_price: 'od 100 \u20ac',
+
+      r3_meta_loc: 'Skadarsko jezero · Virpazar · Rijeka Crnojevica',
+      r3_meta_dur: '\u23f1 6\u20138 sati',
+      r3_meta_km: '\U0001f5fa ~60 km od Budve',
+      r3_price: 'od 100 \u20ac',
+
+      r4_meta_loc: 'NP Lo\u010dven · Mauzolej Nje\u0161go\u0161a · Cetinje',
+      r4_meta_dur: '\u23f1 5\u20136 sati',
+      r4_meta_km: '\U0001f5fa ~40 km od Budve',
+      r4_price: 'od 120 \u20ac',
+
+      r5_meta_loc: 'Manastir Ostrog · Nik\u0161i\u0107 (opciono)',
+      r5_meta_dur: '\u23f1 5\u20136 sati',
+      r5_meta_km: '\U0001f5fa ~90 km od Budve',
+      r5_price: 'od 160 \u20ac',
+
+      r6_meta_loc: 'Stari Bar · Ruine anti\u010dkog grada · Maslinovi gajevi',
+      r6_meta_dur: '\u23f1 4\u20135 sati',
+      r6_meta_km: '\U0001f5fa ~35 km od Budve',
+      r6_price: 'od 120 \u20ac',
+
+      catalogue_microcopy_full: 'Niste prona\u0161li \u0161ta tra\u017eite? <a href="https://wa.me/38268458188?text=Zelim+prilagodenu+rutu" id="cta-custom" target="_blank" rel="noopener">Pi\u0161ite nam</a> \u2014 dogovorit \u0107emo rutu za vas.',
 
       faq_eyebrow: 'FAQ',
       faq_title:   'Česta pitanja',
