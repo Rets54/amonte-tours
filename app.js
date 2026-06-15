@@ -279,6 +279,33 @@
       form_wa_btn: 'Написать в WhatsApp',
       form_note: 'Нажимая «Отправить в Telegram», вы перейдёте в приложение с готовым сообщением.',
 
+      hero_h1: 'Черногория без&nbsp;<em class="hero__gold">автобуса</em><br>и без&nbsp;толпы',
+
+      r1_badge: '⭐ Самый впечатляющий',
+      r1_title: 'Дурмитор и каньон Тары',
+      r1_tagline: 'Самый впечатляющий маршрут Черногории',
+      r1_desc: 'Самый глубокий каньон Европы и дикие горы в одном дне. Смотровая над каньоном, сосновый лес, альпийские озёра. Сезон: май–октябрь.',
+
+      r2_title: 'Боко-Которский залив и старый Котор',
+      r2_tagline: 'Морская история и виды, которые остаются навсегда',
+      r2_desc: 'Старый город внутри стен, подъём на крепость, маленький остров посреди залива — и тот самый вид, ради которого люди едут в Черногорию снова.',
+
+      r3_title: 'Скадарское озеро',
+      r3_tagline: 'Природа, тишина и черногорское вино у воды',
+      r3_desc: 'Самое большое озеро Балкан. Лодка по воде, пеликаны, виноградники и локальный обед у воды. Маршрут для тех, кто хочет тишины и живой природы.',
+
+      r4_title: 'Ловчен и Мавзолей Негоша',
+      r4_tagline: 'Над Черногорией — буквально',
+      r4_desc: 'Серпантин в облаках, 461 ступенька на вершину и вид на всю страну. Старая столица Цетинье — история без туристическй шелухи.',
+
+      r5_title: 'Острог — монастырь в скале',
+      r5_tagline: 'Самое необычное место Черногории',
+      r5_desc: 'Монастырь, вырубленный прямо в отвесной скале. Место паломничества и одновременно — одно из самых сильных визуально мест страны. Работает круглый год.',
+
+      r6_title: 'Старый Бар и оливковые рощи',
+      r6_tagline: 'История на юге страны',
+      r6_desc: 'Руины средневекового города-крепости и самые старые оливковые деревья на Балканах — некоторым более 2000 лет. Маршрут для тех, кто хочет истории без суеты.',
+
       faq_eyebrow: 'FAQ',
       faq_title:   'Частые вопросы',
       faq1_q: 'Чем это отличается от групповой экскурсии?',
@@ -418,6 +445,33 @@
       form_tg_btn: 'Send via Telegram',
       form_wa_btn: 'Write on WhatsApp',
       form_note: 'Clicking "Send via Telegram" will open the app with a ready message.',
+
+      hero_h1: 'Montenegro without&nbsp;<em class="hero__gold">a bus</em><br>and&nbsp;the crowds',
+
+      r1_badge: '\u2b50 Most impressive',
+      r1_title: 'Durmitor & Tara Canyon',
+      r1_tagline: 'The most impressive route in Montenegro',
+      r1_desc: 'The deepest canyon in Europe and wild mountains in one day. Canyon viewpoint, pine forest, alpine lakes. Season: May\u2013October.',
+
+      r2_title: 'Bay of Kotor & Old Town',
+      r2_tagline: 'Coastal history and views that stay with you forever',
+      r2_desc: 'The old town within the walls, a climb to the fortress, a tiny island in the middle of the bay \u2014 and that view people come back to Montenegro for.',
+
+      r3_title: 'Skadar Lake',
+      r3_tagline: 'Nature, silence and Montenegrin wine by the water',
+      r3_desc: 'The largest lake in the Balkans. A boat on the water, pelicans, vineyards and a local lunch by the shore. A route for those who want peace and wild nature.',
+
+      r4_title: 'Lov\u010den & Njego\u0161 Mausoleum',
+      r4_tagline: 'Above Montenegro \u2014 literally',
+      r4_desc: 'Serpentine road through clouds, 461 steps to the summit and a view of the whole country. The old capital Cetinje \u2014 history without the tourist gloss.',
+
+      r5_title: 'Ostrog \u2014 Monastery in the Rock',
+      r5_tagline: 'The most unusual place in Montenegro',
+      r5_desc: 'A monastery carved into a sheer cliff face. A place of pilgrimage and simultaneously one of the most visually powerful spots in the country. Open year-round.',
+
+      r6_title: 'Old Bar & Olive Groves',
+      r6_tagline: 'History in the south of the country',
+      r6_desc: 'Ruins of a medieval fortress-city and the oldest olive trees in the Balkans \u2014 some over 2,000 years old. A route for those who want history without the hustle.',
 
       faq_eyebrow: 'FAQ',
       faq_title:   'Frequently Asked Questions',
@@ -559,6 +613,33 @@
       form_wa_btn: 'Pišite na WhatsApp',
       form_note: 'Klikom na "Pošaljite putem Telegrama" otvorit će se aplikacija sa spremnom porukom.',
 
+      hero_h1: 'Crna Gora bez&nbsp;<em class="hero__gold">autobusa</em><br>i bez&nbsp;gužve',
+
+      r1_badge: '\u2b50 Najimpresivnija',
+      r1_title: 'Durmitor i kanjon Tare',
+      r1_tagline: 'Najimpresivnija ruta u Crnoj Gori',
+      r1_desc: 'Najdublji kanjon Evrope i divlje planine za jedan dan. Vidikovac nad kanjom, borova šuma, alpska jezera. Sezona: maj\u2013oktobar.',
+
+      r2_title: 'Bokokotorski zaliv i stari Kotor',
+      r2_tagline: 'Primorska istorija i prizori koji ostaju zauvek',
+      r2_desc: 'Stari grad unutar zidina, uspun na tvrđavu, mali ostrvo usred zaliva \u2014 i taj pogled zbog kojeg se ljudi vraćaju u Crnu Goru.',
+
+      r3_title: 'Skadarsko jezero',
+      r3_tagline: 'Priroda, tišina i crnogorsko vino uz vodu',
+      r3_desc: 'Najveće jezero Balkana. Čamac po vodi, pelikani, vinograde i lokalni ručak uz obalu. Ruta za one koji žle mir i živu prirodu.',
+
+      r4_title: 'Loščen i Mausolej Nješgoša',
+      r4_tagline: 'Iznad Crne Gore \u2014 bukvalno',
+      r4_desc: 'Serpentina kroz oblake, 461 stepenica do vrha i pogled na celu zemlju. Stara prestonica Cetinje \u2014 istorija bez turističke školjke.',
+
+      r5_title: 'Ostrog \u2014 manastir u steni',
+      r5_tagline: 'Najneobičnije mesto Crne Gore',
+      r5_desc: 'Manastir uklesan u strmu stenu. Mesto hodočašća i istovremeno \u2014 jedno od vizualno najmoćnijih mesta u zemlji. Radi tokom cele godine.',
+
+      r6_title: 'Stari Bar i maslinovi gajevi',
+      r6_tagline: 'Istorija na jugu zemlje',
+      r6_desc: 'Ruine srednovjekovnog grada-tvrđave i najstarije masline na Balkanu \u2014 nekima više od 2000 godina. Ruta za one koji žle istoriju bez vreve.',
+
       faq_eyebrow: 'FAQ',
       faq_title:   'Česta pitanja',
       faq1_q: 'Čime se ovo razlikuje od grupne ture?',
@@ -589,7 +670,7 @@
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (s[key] !== undefined) {
-        if (s[key].includes('\n')) {
+        if (s[key].includes('\n') || s[key].includes('<')) {
           el.innerHTML = s[key].replace(/\n/g, '<br>');
         } else {
           el.textContent = s[key];
