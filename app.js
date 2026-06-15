@@ -332,8 +332,7 @@
       catalogue_link:      'Contact us',
       catalogue_suffix:    '— we\'ll plan a route for you.',
 
-      contrast_title: 'How people usually travel —
-and why it doesn\'t always work',
+      contrast_title: 'How people usually travel —\nand why it doesn\'t always work',
       bad1_title: 'Group bus tour',
       bad1_li1: '30–40 people',
       bad1_li2: 'Fixed route, zero flexibility',
@@ -473,8 +472,7 @@ and why it doesn\'t always work',
       catalogue_link:      'Pišite nam',
       catalogue_suffix:    '— dogovorit ćemo rutu za vas.',
 
-      contrast_title: 'Kako ljudi obično putuju —
-i zašto to ne funkcioniše uvek',
+      contrast_title: 'Kako ljudi obično putuju —\ni zašto to ne funkcioniše uvek',
       bad1_title: 'Grupni autobus',
       bad1_li1: '30–40 ljudi',
       bad1_li2: 'Fiksna ruta, nula fleksibilnosti',
