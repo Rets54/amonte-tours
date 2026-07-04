@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /montenegro-private-tours.html
 
 Sitemap: https://amonte.me/sitemap.xml

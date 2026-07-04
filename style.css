@@ -1204,6 +1204,22 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.5;
 }
 
+.contact-form__alt-contacts {
+  font-size: .8125rem;
+  color: rgba(255,255,255,.35);
+  text-align: center;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+.contact-form__alt-link {
+  color: rgba(255,255,255,.55);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .2s;
+}
+.contact-form__alt-link:hover { color: rgba(255,255,255,.9); }
+
 /* ═══════════════════════════════════════════
    FOOTER
 ═══════════════════════════════════════════ */
@@ -1234,6 +1250,22 @@ a { color: inherit; text-decoration: none; }
   font-size: .875rem;
   color: rgba(255,255,255,.4);
 }
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+  margin-top: 4px;
+}
+
+.footer__contact-link {
+  font-size: .8125rem;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer__contact-link:hover { color: rgba(255,255,255,.85); }
 
 .footer__copy {
   font-size: .75rem;
