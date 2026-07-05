@@ -43,6 +43,8 @@
     '.route-card',
     '.how__step',
     '.included__col',
+    '.about-guide__photo-wrap',
+    '.about-guide__text',
     '.trust__gallery',
     '.trust__quote',
     '.gallery__grid',

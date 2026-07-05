@@ -839,6 +839,63 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ═══════════════════════════════════════════
+   ABOUT GUIDE
+═══════════════════════════════════════════ */
+.about-guide {
+  background: var(--color-bg);
+}
+
+.about-guide__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .about-guide__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.about-guide__photo-wrap {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 900px) {
+  .about-guide__photo-wrap {
+    aspect-ratio: 1/1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.about-guide__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-guide__text .section__eyebrow {
+  margin-bottom: 12px;
+}
+
+.about-guide__text .section__title {
+  margin-bottom: 24px;
+}
+
+.about-guide__body {
+  font-size: 1.0625rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════════════════════
    TRUST
 ═══════════════════════════════════════════ */
 .trust .section__subtitle {
