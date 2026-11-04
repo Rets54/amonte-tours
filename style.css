@@ -1845,3 +1845,240 @@ a { color: inherit; text-decoration: none; }
     margin-inline: auto 0;
   }
 }
+
+/* ══════════════════════════════════════════════
+   AMONTE COLLAGE HERO (isolated, prefix amonte-collage-)
+═══════════════════════════════════════════════ */
+
+.amonte-collage-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0b131e;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 48px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.amonte-collage-bg {
+  position: absolute;
+  inset: -20px;
+  background-image: url('https://images.unsplash.com/photo-1580655653885-65763b2597d0?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px) brightness(0.45);
+  transform: scale(1.06);
+  transition: background-image 0.6s ease, transform 0.8s ease;
+  z-index: 1;
+}
+
+.amonte-collage-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(11, 19, 30, 0.35) 0%, rgba(11, 19, 30, 0.85) 100%);
+  z-index: 2;
+}
+
+.amonte-collage-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1440px;
+  height: 82vh;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Центральный блок */
+.amonte-collage-center {
+  position: relative;
+  z-index: 5;
+  max-width: 440px;
+  text-align: center;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: rgba(15, 25, 38, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+}
+
+.amonte-collage-badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e5b869;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.amonte-collage-title {
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.15;
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.amonte-collage-subtitle {
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 22px;
+}
+
+.amonte-collage-scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.amonte-collage-scroll-btn:hover {
+  background: #e5b869;
+  color: #0b131e;
+  border-color: #e5b869;
+}
+
+/* Карточки туров */
+.amonte-collage-card {
+  position: absolute;
+  width: 300px;
+  height: 225px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s ease, border-color 0.3s ease, z-index 0s;
+  z-index: 4;
+  display: flex;
+  align-items: flex-end;
+}
+
+.amonte-card-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.amonte-collage-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 15, 24, 0.92) 0%, rgba(8, 15, 24, 0.25) 60%, rgba(8, 15, 24, 0.05) 100%);
+  z-index: 1;
+}
+
+.amonte-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 18px 20px;
+  width: 100%;
+}
+
+.amonte-card-num {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e5b869;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.amonte-card-heading {
+  margin: 0 0 6px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.amonte-card-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Расположение карточек свободным коллажем (Desktop) */
+.amonte-card-1 { top: 2%; left: 4%; transform: rotate(-5deg); }
+.amonte-card-2 { top: 0%; left: 37%; transform: rotate(2.5deg); }
+.amonte-card-3 { top: 3%; right: 4%; transform: rotate(5deg); }
+.amonte-card-4 { bottom: 3%; left: 5%; transform: rotate(4deg); }
+.amonte-card-5 { bottom: 0%; left: 38%; transform: rotate(-2.5deg); }
+.amonte-card-6 { bottom: 3%; right: 5%; transform: rotate(-4.5deg); }
+
+/* Эффект при наведении */
+.amonte-collage-card:hover {
+  transform: rotate(0deg) scale(1.08) translateY(-6px);
+  z-index: 10;
+  border-color: #e5b869;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.75);
+}
+
+.amonte-collage-card:hover .amonte-card-img {
+  transform: scale(1.1);
+}
+
+/* Адаптивность для ноутбуков, планшетов и телефонов */
+@media (max-width: 1180px) {
+  .amonte-collage-container {
+    height: auto;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .amonte-collage-center {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+  .amonte-collage-card {
+    position: relative;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+    height: 240px;
+    transform: none !important;
+  }
+  .amonte-collage-card:hover {
+    transform: translateY(-5px) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .amonte-collage-hero {
+    padding: 72px 16px 36px;
+  }
+  .amonte-collage-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .amonte-collage-card {
+    height: 210px;
+  }
+}

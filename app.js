@@ -898,3 +898,23 @@
   });
 
 })();
+
+/* ═════════════════════════════════════════════════
+   AMONTE COLLAGE HERO: смена атмосферного фона при наведении
+═════════════════════════════════════════════════ */
+(function () {
+  'use strict';
+
+  const bgEl = document.getElementById('amonte-collage-bg');
+  const cards = document.querySelectorAll('.amonte-collage-card');
+  if (!bgEl || !cards.length) return;
+
+  cards.forEach(function (card) {
+    card.addEventListener('mouseenter', function () {
+      const bgUrl = card.getAttribute('data-bg');
+      if (bgUrl) {
+        bgEl.style.backgroundImage = "url('" + bgUrl + "')";
+      }
+    });
+  });
+})();
